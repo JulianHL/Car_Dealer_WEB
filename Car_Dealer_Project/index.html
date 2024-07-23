@@ -13,7 +13,7 @@
             integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH"
             crossorigin="anonymous" />
         <!--Style CSS-->
-        <link rel="stylesheet" type="text/css" media="screen" href="CSS/styles.css" />
+        <link rel="stylesheet" type="text/css" media="screen" href="CSS/styles(JH).css" />
     </head>
     <body>
         <header>
@@ -72,18 +72,13 @@
                                     <ul class="dropdown-menu dropdown-menu-dark">
                                         <li><a class="dropdown-item" href="inventory.html">Car/Sedan</a></li>
                                         <li><a class="dropdown-item" href="inventory.html">SUV/Minivan/4X4</a></li>
-                                        <li><a class="dropdown-item" href="#">Electric</a></li>
+                                        <li><a class="dropdown-item" href="inventory.html">Electric</a></li>
                                         <li><a class="dropdown-item" href="inventory.html">Convertible</a></li>
                                         <li><a class="dropdown-item" href="inventory.html">Luxury</a></li>
                                     </ul>
                                 </li>
                                 <li class="nav-item">
-                                    <a
-                                        class="nav-link"
-                                        href="https://apps.royalbank.com/apps/my-auto-affordability?lang=en&utm_dc=ga_SEG_1982887328_72769833564_600353731585_aud-670827466970:kwd-298820151983_c_g_&gad_source=1&gclid=CjwKCAjwhvi0BhA4EiwAX25uj0lsvogf04DxZYSBqk1JEbyk5NPP17raJ9l82J61voz-ki-e_-DapBoCyu4QAvD_BwE#!/main/welcome"
-                                        target="_blank"
-                                        >Financing</a
-                                    >
+                                    <a class="nav-link" href="financing.html" target="_blank">Financing</a>
                                 </li>
                                 <li class="nav-item">
                                     <a class="nav-link" href="about.html">About us</a>
@@ -101,43 +96,73 @@
             <section class="booking d-flex align-items-center justify-content-center">
                 <div class="booking_form d-flex align-items-center justify-content-center">
                     <form class="form-inline">
-                        <div class="row d-flex justify-content-center">
-                            <div class="col d-flex justify-content-center">
+                        <div class="row">
+                            <div class="col">
                                 <div class="form-group">
-                                    <label for="date_Time_From">Location</label>
-                                    <br />
-                                    <input
-                                        class="form-control flex-lg-wrap-reverse"
-                                        type="text"
-                                        id="location_input"
-                                        name="location_input" />
+                                    <select
+                                        class="form-select"
+                                        id="isTheSameDropOffLocation_input"
+                                        name="isTheSameDropOffLocation_input">
+                                        <option>Same Drop-Off location</option>
+                                        <option>Different Drop-Off location</option>
+                                    </select>
                                 </div>
                             </div>
-                            <div class="col d-flex justify-content-center">
+                        </div>
+                        <div class="row">
+                            <div class="col d-flex align-items-center justify-content-center">
                                 <div class="form-group">
-                                    <label for="date_Time_From">Pick-Up Date</label>
+                                    <label for="pickUpLocation_input">Pick-Up Location</label>
+                                    <br />
+                                    <select class="form-select" id="pickUpLocation_input" name="pickUpLocation_input">
+                                        <option>Montreal</option>
+                                        <option>Laval</option>
+                                        <option>Quebec</option>
+                                        <option>Gaspe</option>
+                                        <option>Lachine</option>
+                                        <option>Lachute</option>
+                                    </select>
+                                </div>
+                            </div>
+                            <div class="col d-flex align-items-center justify-content-center">
+                                <div class="form-group">
+                                    <label for="dropOffLocation_input">Drop-Off Location</label>
+                                    <br />
+                                    <select class="form-select" id="dropOffLocation_input" name="dropOffLocation_input">
+                                        <option>Montreal</option>
+                                        <option>Laval</option>
+                                        <option>Quebec</option>
+                                        <option>Gaspe</option>
+                                        <option>Lachine</option>
+                                        <option>Lachute</option>
+                                    </select>
+                                </div>
+                            </div>
+                            <div class="col d-flex align-items-center justify-content-center">
+                                <div class="form-group">
+                                    <label for="pickUpDate_input">Pick-Up Date</label>
                                     <br />
                                     <input
                                         class="form-control"
                                         type="datetime-local"
-                                        id="date_Time_From_input"
-                                        name="date_Time_From_input" />
+                                        id="pickUpDate_input"
+                                        name="pickUpDate_input" />
                                 </div>
                             </div>
-                            <div class="col d-flex justify-content-center">
+                            <div class="col d-flex align-items-center justify-content-center">
                                 <div class="form-group">
-                                    <label for="date_Time_From">Drop-Off Date</label>
+                                    <label for="dropOffDate_input">Drop-Off Date</label>
                                     <br />
                                     <input
                                         class="form-control"
                                         type="datetime-local"
-                                        id="date_Time_To"
-                                        name="date_Time_To" />
+                                        id="dropOffDate_input"
+                                        name="dropOffDate_input" />
                                 </div>
                             </div>
 
                             <div class="col d-flex align-items-end justify-content-center">
-                                <input class="btn btn-dark w-100" type="button" value="Book" />
+                                <input class="btn btn-dark" type="button" value="Book" />
                             </div>
                         </div>
                     </form>
@@ -145,6 +170,84 @@
             </section>
         </main>
 
+        <footer class="py-5">
+            <div class="row">
+                <div class="col-6 col-md-2 mb-3">
+                    <h5>Section</h5>
+                    <ul class="nav flex-column">
+                        <li class="nav-item mb-2">
+                            <a href="index.html" class="nav-link">Home</a>
+                        </li>
+                        <li class="nav-item mb-2">
+                            <a href="index.html" class="nav-link">Book a car</a>
+                        </li>
+                        <li class="nav-item mb-2">
+                            <a href="financing.html" class="nav-link">Financing</a>
+                        </li>
+                        <li class="nav-item mb-2">
+                            <a href="about.html" class="nav-link">About us</a>
+                        </li>
+                    </ul>
+                </div>
+
+                <div class="col-6 col-md-2 mb-3">
+                    <h5>Our Vehicles</h5>
+                    <ul class="nav flex-column">
+                        <li class="nav-item mb-2">
+                            <a href="inventory.html" class="nav-link">Car/Sedan</a>
+                        </li>
+                        <li class="nav-item mb-2">
+                            <a href="inventory.html" class="nav-link">SUV/MINIVAN/4X4</a>
+                        </li>
+                        <li class="nav-item mb-2">
+                            <a href="inventory.html" class="nav-link">Electric</a>
+                        </li>
+                        <li class="nav-item mb-2">
+                            <a href="#" class="nav-link">Convertible</a>
+                        </li>
+                        <li class="nav-item mb-2">
+                            <a href="inventory.html" class="nav-link">Luxury</a>
+                        </li>
+                    </ul>
+                </div>
+
+                <div class="col-6 col-md-2 mb-3">
+                    <h5>Contact Us</h5>
+                    <ul class="nav flex-column">
+                        <li class="nav-item mb-2">
+                            <a
+                                href="https://www.google.com/maps/place/821+Sainte+Croix+Ave,+Saint-Laurent,+QC+H4L+3X9/@45.5144663,-73.6781522,17z/data=!3m1!4b1!4m6!3m5!1s0x4cc9193b0f376acd:0x57f52a612670cfe0!8m2!3d45.5144626!4d-73.6755719!16s%2Fg%2F11t2_hp87g?entry=ttu"
+                                target="_blank"
+                                class="nav-link"
+                                >821 Sainte Croix Ave, Saint-Laurent, Quebec H4L 3X9</a
+                            >
+                        </li>
+                        <li class="nav-item mb-2">
+                            <a href="#" class="nav-link">(514) 931-8841</a>
+                        </li>
+                        <li class="nav-item mb-2">
+                            <a href="#" class="nav-link">(514) 289-4558</a>
+                        </li>
+                    </ul>
+                </div>
+
+                <div class="col-md-5 offset-md-1 mb-3">
+                    <form>
+                        <h5>Subscribe to our newsletter</h5>
+                        <p>Monthly digest of what's new and exciting from us.</p>
+                        <div class="d-flex flex-column flex-sm-row w-100 gap-2">
+                            <label for="newsletter1" class="visually-hidden">Email address</label>
+                            <input id="newsletter1" type="text" class="form-control" placeholder="Email address" />
+                            <button class="btn btn-primary" type="button">Subscribe</button>
+                        </div>
+                    </form>
+                </div>
+            </div>
+
+            <div class="d-flex flex-column flex-sm-row justify-content-between py-4 my-4 border-top">
+                <p>© 2024 Prime Riders, Ricardo & Julian Inc. All rights reserved.</p>
+            </div>
+        </footer>
         <!--BoostTrap JS-->
         <script
             src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
