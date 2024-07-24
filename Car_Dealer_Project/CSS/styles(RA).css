@@ -1,4 +1,4 @@
-*{
+* {
     font-family: Arial, Helvetica, sans-serif;
     padding: 0;
     margin: 0;
@@ -6,76 +6,64 @@
     list-style-type: none;
 }
 
-body{
-    background-image: linear-gradient(to bottom left, #ff8142, #ffeb3b, #ffffff);
+body {
+    background: linear-gradient(to bottom left, #ff2d55, #bb003e, #000000);
     background-repeat: no-repeat;
-    background-size: contain;
+    background-size: cover;
+    width: 100%;
 }
 
-.page{
-    background-color: #ffffff;
+.page {
+    margin-top: 95px;
+    background-color: rgba(0, 0, 0, 0.9);
     width: 95%;
-    margin: 30px;
+    border-radius: 10px;
+    position: relative;
+    padding: 30px;
+}
+
+main {
     padding-bottom: 20px;
     border-radius: 10px;
 }
 
-
-main{
-    margin-top: -20px;
-}
-
-main h1{
-    margin-bottom: 30px;
+main .title h1 {
+    font-weight: 700;
+    margin: 20px;
     text-align: center;
-    background-color: #ff8142;
+    background-color: rgba(136, 0, 20, 0.44);
     color: #ffffff;
     padding: 20px;
-    margin: 20px;
     border-radius: 10px;
-    width: 94%;
+    width: 100%;
 }
 
-.filters{
+.filters {
     float: left;
-    margin: 0px 20px;
+    margin: 0 20px;
     border: 1px solid #c0c0c0;
     border-radius: 5px;
+    height: fit-content;
 }
 
-.filters li{
-    padding: 20px;
+.filters p {
+    color: #ffff;
+    text-align: center;
+    font-weight: bold;
+    margin: 20px 0 0;
+}
+
+.filters .btn {
     width: 150px;
 }
 
-.filters li:not(:first-child){
-    border-top: 1px solid #c0c0c0;
-}
-
-.filters p{
-    font-weight: bold;
-    margin-bottom: 10px;
-}
-
-.filters li input[type = "text"]{
-    width: 90%;
-}
-
-.filters li input[type = "button"]{
-    width: 100px;
-    height: 30px;
-    margin: 10px;
-}
-.filters li input[type = "button"]:hover{
-    background-color: #ffff80;
-}
-
-.cars{
+.cars {
+    color: #ffff;
     display: inline-block;
-    margin: 0px 20px;
+    margin: 0 20px;
 }
 
-.cars li{
+.cars li {
     width: 250px;
     display: inline-block;
     border: 1px solid #c0c0c0;
@@ -83,31 +71,39 @@ main h1{
     margin: 10px;
     padding: 20px;
 }
-.cars li:hover{
-    box-shadow: 0px 0px 15px #ffeb3b;
+.cars li:hover {
+    box-shadow: 0 0 15px #ff3b58;
 }
 
-.cars img{
+.bank {
+    box-sizing: border-box;
+}
+.bank div {
+    box-sizing: border-box;
+    height: 100%;
+}
+.cars img {
     width: 100%;
     height: 160px;
     margin-bottom: 10px;
+    border-radius: 5px;
 }
 
-.cars input[type = "button"]{
+.cars input[type="button"] {
     margin-top: 10px;
     width: 30%;
     height: 20px;
     float: right;
 }
-.cars input[type = "button"]:hover{
+.cars input[type="button"]:hover {
     background-color: #ffff80;
 }
 
-.financing{
+.financing {
     padding: 20px;
 }
 
-.financing li{
+.financing .bank {
     display: inline-block;
     border: 1px solid #c0c0c0;
     border-radius: 10px;
@@ -115,39 +111,39 @@ main h1{
     padding: 20px;
     margin: 25px;
 }
-.financing li:hover{
-    box-shadow: 0px 0px 15px #ffeb3b;
+.financing .bank:hover {
+    box-shadow: 0 0 15px #ff3b58;
 }
 
-.financing a{
+.financing a {
     text-decoration: none;
 }
 
-.financing img{
+.financing img {
     width: 100%;
-    height: 200px;
+    height: 90%;
+    border-radius: 5px;
 }
 
-.financing p{
+.financing p {
+    font-weight: 700;
     text-decoration: none;
     text-align: center;
     margin-top: 10px;
-    color: #000000;
+    color: #ffffff;
 }
 
-
-
-.contact{
+.contact {
     width: 15%;
     float: right;
     padding: 20px;
 }
 
-.contact img{
+.contact img {
     width: 100%;
 }
 
-.copyright{
+.copyright {
     margin-top: 250px;
     margin-bottom: 10px;
     text-align: center;

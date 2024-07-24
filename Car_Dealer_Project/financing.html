@@ -73,18 +73,13 @@
                                     <ul class="dropdown-menu dropdown-menu-dark">
                                         <li><a class="dropdown-item" href="inventory.html">Car/Sedan</a></li>
                                         <li><a class="dropdown-item" href="inventory.html">SUV/Minivan/4X4</a></li>
-                                        <li><a class="dropdown-item" href="#">Electric</a></li>
+                                        <li><a class="dropdown-item" href="inventory.html">Electric</a></li>
                                         <li><a class="dropdown-item" href="inventory.html">Convertible</a></li>
                                         <li><a class="dropdown-item" href="inventory.html">Luxury</a></li>
                                     </ul>
                                 </li>
                                 <li class="nav-item">
-                                    <a
-                                        class="nav-link"
-                                        href="https://apps.royalbank.com/apps/my-auto-affordability?lang=en&utm_dc=ga_SEG_1982887328_72769833564_600353731585_aud-670827466970:kwd-298820151983_c_g_&gad_source=1&gclid=CjwKCAjwhvi0BhA4EiwAX25uj0lsvogf04DxZYSBqk1JEbyk5NPP17raJ9l82J61voz-ki-e_-DapBoCyu4QAvD_BwE#!/main/welcome"
-                                        target="_blank"
-                                        >Financing</a
-                                    >
+                                    <a class="nav-link" href="financing.html" target="_blank">Financing</a>
                                 </li>
                                 <li class="nav-item">
                                     <a class="nav-link" href="about.html">About us</a>
@@ -99,27 +94,30 @@
             </nav>
         </header>
 
-        <main>
-            <h1>Financing</h1>
-            <div class="financing">
-                <ul>
-                    <li>
+        <main class="d-flex justify-content-center">
+            <div class="page">
+                <div class="title d-flex justify-content-center">
+                    <h1>Financing</h1>
+                </div>
+                <div class="financing d-flex justify-content-center">
+                    <div class="bank">
                         <a href="https://www.rbcroyalbank.com/car-loans/index.html" target="_blank">
                             <img
                                 src="https://leeds.bigbrothersbigsisters.ca/wp-content/uploads/sites/216/2020/11/rbc-royal-bank-logo.jpg"
                                 alt="" />
+
                             <p>RBC Royal Bank</p>
                         </a>
-                    </li>
-                    <li>
+                    </div>
+                    <div class="bank">
                         <a
                             href="https://www.cibc.com/en/personal-banking/loans-and-lines-of-credit/calculators/car-loan-calculator.html"
                             target="_blank">
                             <img src="https://logocreator.io/wp-content/uploads/2023/11/1632415763765.jpeg" alt="" />
                             <p>CIBC</p>
                         </a>
-                    </li>
-                    <li>
+                    </div>
+                    <div class="bank">
                         <a
                             href="https://www.td.com/ca/en/personal-banking/products/borrowing/auto-finance/car-loans"
                             target="_blank">
@@ -128,11 +126,11 @@
                                 alt="" />
                             <p>TD Bank</p>
                         </a>
-                    </li>
-                </ul>
+                    </div>
+                </div>
             </div>
         </main>
-        <footer class="py-5">
+        <footer class="p-3">
             <div class="row">
                 <div class="col-6 col-md-2 mb-3">
                     <h5>Section</h5>
@@ -159,7 +157,7 @@
                             <a href="inventory.html" class="nav-link">Car/Sedan</a>
                         </li>
                         <li class="nav-item mb-2">
-                            <a href="inventory.html" class="nav-link">SUV/MINIVAN/4X4</a>
+                            <a href="inventory.html" class="nav-link">SUV/Mnivan/4X4</a>
                         </li>
                         <li class="nav-item mb-2">
                             <a href="inventory.html" class="nav-link">Electric</a>
@@ -194,13 +192,16 @@
                 </div>
 
                 <div class="col-md-5 offset-md-1 mb-3">
-                    <form>
+                    <form class="form-inline">
                         <h5>Subscribe to our newsletter</h5>
                         <p>Monthly digest of what's new and exciting from us.</p>
-                        <div class="d-flex flex-column flex-sm-row w-100 gap-2">
-                            <label for="newsletter1" class="visually-hidden">Email address</label>
-                            <input id="newsletter1" type="text" class="form-control" placeholder="Email address" />
-                            <button class="btn btn-primary" type="button">Subscribe</button>
+                        <div class="row">
+                            <div class="col">
+                                <input id="newsletter" type="text" class="form-control" placeholder="Email address" />
+                            </div>
+                            <div class="col">
+                                <button class="btn btn-primary" type="button">Subscribe</button>
+                            </div>
                         </div>
                     </form>
                 </div>

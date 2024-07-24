@@ -17,169 +17,238 @@
         <link rel="stylesheet" type="text/css" media="screen" href="CSS/styles(RA).css" />
     </head>
     <body>
-        <div class="page">
-            <header>
-                <nav class="navbar navbar-dark navbar-expand-lg fixed-top">
-                    <div class="container-fluid">
-                        <a class="navbar-brand" href="#">
+        <header>
+            <nav class="navbar navbar-dark navbar-expand-lg fixed-top">
+                <div class="container-fluid">
+                    <a class="navbar-brand" href="#">
+                        <img
+                            src="Resources/Images/Prime%20Riders.png"
+                            alt="Logo"
+                            width="50"
+                            height="50"
+                            class="d-inline-block" />
+                        Prime Riders
+                    </a>
+                    <button
+                        class="navbar-toggler"
+                        type="button"
+                        data-bs-toggle="offcanvas"
+                        data-bs-target="#offcanvasDarkNavbar"
+                        aria-controls="offcanvasDarkNavbar">
+                        <span class="navbar-toggler-icon"></span>
+                    </button>
+                    <div
+                        class="offcanvas offcanvas-end"
+                        tabindex="-1"
+                        id="offcanvasDarkNavbar"
+                        aria-labelledby="offcanvasDarkNavbarLabel">
+                        <div class="offcanvas-header">
                             <img
                                 src="Resources/Images/Prime%20Riders.png"
                                 alt="Logo"
                                 width="50"
                                 height="50"
                                 class="d-inline-block" />
-                            Prime Riders
-                        </a>
-                        <button
-                            class="navbar-toggler"
-                            type="button"
-                            data-bs-toggle="offcanvas"
-                            data-bs-target="#offcanvasDarkNavbar"
-                            aria-controls="offcanvasDarkNavbar">
-                            <span class="navbar-toggler-icon"></span>
-                        </button>
-                        <div
-                            class="offcanvas offcanvas-end"
-                            tabindex="-1"
-                            id="offcanvasDarkNavbar"
-                            aria-labelledby="offcanvasDarkNavbarLabel">
-                            <div class="offcanvas-header">
-                                <img
-                                    src="Resources/Images/Prime%20Riders.png"
-                                    alt="Logo"
-                                    width="50"
-                                    height="50"
-                                    class="d-inline-block" />
-                                <h5 class="offcanvas-title" id="offcanvasDarkNavbarLabel">Prime Riders</h5>
-                                <button
-                                    type="button"
-                                    class="btn-close btn-close-white"
-                                    data-bs-dismiss="offcanvas"
-                                    aria-label="Close"></button>
+                            <h5 class="offcanvas-title" id="offcanvasDarkNavbarLabel">Prime Riders</h5>
+                            <button
+                                type="button"
+                                class="btn-close btn-close-white"
+                                data-bs-dismiss="offcanvas"
+                                aria-label="Close"></button>
+                        </div>
+                        <div class="offcanvas-body">
+                            <ul class="navbar-nav justify-content-center flex-grow-1 pe-3">
+                                <li class="nav-item">
+                                    <a class="nav-link" href="index.html">Book a car</a>
+                                </li>
+                                <li class="nav-item dropdown">
+                                    <a
+                                        class="nav-link dropdown-toggle"
+                                        href="inventory.html"
+                                        role="button"
+                                        data-bs-toggle="dropdown"
+                                        aria-expanded="false">
+                                        Our Vehicles
+                                    </a>
+                                    <ul class="dropdown-menu dropdown-menu-dark">
+                                        <li><a class="dropdown-item" href="inventory.html">Car/Sedan</a></li>
+                                        <li><a class="dropdown-item" href="inventory.html">SUV/Minivan/4X4</a></li>
+                                        <li><a class="dropdown-item" href="inventory.html">Electric</a></li>
+                                        <li><a class="dropdown-item" href="inventory.html">Convertible</a></li>
+                                        <li><a class="dropdown-item" href="inventory.html">Luxury</a></li>
+                                    </ul>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-link" href="financing.html" target="_blank">Financing</a>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-link" href="about.html">About us</a>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-link" href="contact.html">Contact us</a>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </nav>
+        </header>
+
+        <main class="d-flex justify-content-center">
+            <div class="page">
+                <div class="title d-flex justify-content-center">
+                    <h1>Cars Inventory</h1>
+                </div>
+                <section class="d-flex">
+                    <div class="filters p-4 d-g">
+                        <div class>
+                            <p>Search</p>
+                            <input class="form-control m-2" type="text" placeholder="Search for a car" />
+                        </div>
+
+                        <div>
+                            <p>Body Type</p>
+                            <div class="d-flex justify-content-center">
+                                <button class="btn btn-dark m-2">Cars</button>
                             </div>
-                            <div class="offcanvas-body">
-                                <ul class="navbar-nav justify-content-center flex-grow-1 pe-3">
-                                    <li class="nav-item">
-                                        <a class="nav-link" href="index.html">Book a car</a>
-                                    </li>
-                                    <li class="nav-item dropdown">
-                                        <a
-                                            class="nav-link dropdown-toggle"
-                                            href="inventory.html"
-                                            role="button"
-                                            data-bs-toggle="dropdown"
-                                            aria-expanded="false">
-                                            Our Vehicles
-                                        </a>
-                                        <ul class="dropdown-menu dropdown-menu-dark">
-                                            <li><a class="dropdown-item" href="inventory.html">Car/Sedan</a></li>
-                                            <li><a class="dropdown-item" href="inventory.html">SUV/Minivan/4X4</a></li>
-                                            <li><a class="dropdown-item" href="#">Electric</a></li>
-                                            <li><a class="dropdown-item" href="inventory.html">Convertible</a></li>
-                                            <li><a class="dropdown-item" href="inventory.html">Luxury</a></li>
-                                        </ul>
-                                    </li>
-                                    <li class="nav-item">
-                                        <a
-                                            class="nav-link"
-                                            href="https://apps.royalbank.com/apps/my-auto-affordability?lang=en&utm_dc=ga_SEG_1982887328_72769833564_600353731585_aud-670827466970:kwd-298820151983_c_g_&gad_source=1&gclid=CjwKCAjwhvi0BhA4EiwAX25uj0lsvogf04DxZYSBqk1JEbyk5NPP17raJ9l82J61voz-ki-e_-DapBoCyu4QAvD_BwE#!/main/welcome"
-                                            target="_blank"
-                                            >Financing</a
-                                        >
-                                    </li>
-                                    <li class="nav-item">
-                                        <a class="nav-link" href="about.html">About us</a>
-                                    </li>
-                                    <li class="nav-item">
-                                        <a class="nav-link" href="contact.html">Contact us</a>
-                                    </li>
-                                </ul>
+                            <div class="d-flex justify-content-center">
+                                <button class="btn btn-dark m-2">Covertible</button>
+                            </div>
+                            <div class="d-flex justify-content-center">
+                                <button class="btn btn-dark m-2">Trucks</button>
+                            </div>
+                        </div>
+                        <div>
+                            <p>Brands</p>
+                            <div class="d-flex justify-content-center">
+                                <button class="btn btn-dark m-2">Audi</button>
+                            </div>
+                            <div class="d-flex justify-content-center">
+                                <button class="btn btn-dark m-2">BMW</button>
+                            </div>
+                            <div class="d-flex justify-content-center">
+                                <button class="btn btn-dark m-2">KIA</button>
+                            </div>
+                            <div class="d-flex justify-content-center">
+                                <button class="btn btn-dark m-2">Volkswagen</button>
+                            </div>
+                            <div class="d-flex justify-content-center">
+                                <button class="btn btn-dark m-2">Porsche</button>
                             </div>
                         </div>
                     </div>
-                </nav>
-            </header>
+                    <div class="cars">
+                        <ul>
+                            <li>
+                                <img src="Resources/Images/audiCar1.jpg" alt="" />
+                                <p><strong>Car Model:</strong> Audi A4</p>
+                                <p><strong>Year:</strong> 2017</p>
+                                <p><strong>Km:</strong> 133,077</p>
+                                <p><strong>Cost:</strong> $24,890</p>
+                                <button class="btn btn-dark">Rent</button>
+                            </li>
+                            <li>
+                                <img src="Resources/Images/audiConvertible1.jpg" alt="" />
+                                <p><strong>Car Model:</strong> Audi A5</p>
+                                <p><strong>Year:</strong> 2022</p>
+                                <p><strong>Km:</strong> 29,200</p>
+                                <p><strong>Cost:</strong> $59,900</p>
+                                <button class="btn btn-dark">Rent</button>
+                            </li>
+                            <li>
+                                <img src="Resources/Images/bmwCar1.jpg" alt="" />
+                                <p><strong>Car Model:</strong> BMW 230</p>
+                                <p><strong>Year:</strong> 2017</p>
+                                <p><strong>Km:</strong> 114,100</p>
+                                <p><strong>Cost:</strong> $26,995</p>
+                                <button class="btn btn-dark">Rent</button>
+                            </li>
+                        </ul>
+                    </div>
+                </section>
+            </div>
+        </main>
+        <footer class="p-3">
+            <div class="row">
+                <div class="col-6 col-md-2 mb-3">
+                    <h5>Section</h5>
+                    <ul class="nav flex-column">
+                        <li class="nav-item mb-2">
+                            <a href="index.html" class="nav-link">Home</a>
+                        </li>
+                        <li class="nav-item mb-2">
+                            <a href="index.html" class="nav-link">Book a car</a>
+                        </li>
+                        <li class="nav-item mb-2">
+                            <a href="financing.html" class="nav-link">Financing</a>
+                        </li>
+                        <li class="nav-item mb-2">
+                            <a href="about.html" class="nav-link">About us</a>
+                        </li>
+                    </ul>
+                </div>
 
-            <main>
-                <h1>Cars Inventory</h1>
-                <div class="filters">
-                    <ul>
-                        <li>
-                            <p>Search</p>
-                            <input type="text" />
+                <div class="col-6 col-md-2 mb-3">
+                    <h5>Our Vehicles</h5>
+                    <ul class="nav flex-column">
+                        <li class="nav-item mb-2">
+                            <a href="inventory.html" class="nav-link">Car/Sedan</a>
                         </li>
-                        <li>
-                            <p>Body Type</p>
-                            <input type="button" value="Cars" />
-                            <input type="button" value="Convert" />
-                            <input type="button" value="Trucks" />
+                        <li class="nav-item mb-2">
+                            <a href="inventory.html" class="nav-link">SUV/Mnivan/4X4</a>
                         </li>
-                        <li>
-                            <p>Brands</p>
-                            <input type="button" value="Audi" />
-                            <input type="button" value="BMW" />
-                            <input type="button" value="KIA" />
-                            <input type="button" value="Volkswagen" />
-                            <input type="button" value="Porsche" />
+                        <li class="nav-item mb-2">
+                            <a href="inventory.html" class="nav-link">Electric</a>
+                        </li>
+                        <li class="nav-item mb-2">
+                            <a href="#" class="nav-link">Convertible</a>
+                        </li>
+                        <li class="nav-item mb-2">
+                            <a href="inventory.html" class="nav-link">Luxury</a>
                         </li>
                     </ul>
                 </div>
-                <div class="cars">
-                    <ul>
-                        <li>
-                            <img src="Resources/Images/audiCar1.jpg" alt="" />
-                            <p><strong>Car Model:</strong> Audi A4</p>
-                            <p><strong>Year:</strong> 2017</p>
-                            <p><strong>Km:</strong> 133,077</p>
-                            <p><strong>Cost:</strong> $24,890</p>
-                            <input type="button" value="Buy" />
+
+                <div class="col-6 col-md-2 mb-3">
+                    <h5>Contact Us</h5>
+                    <ul class="nav flex-column">
+                        <li class="nav-item mb-2">
+                            <a
+                                href="https://www.google.com/maps/place/821+Sainte+Croix+Ave,+Saint-Laurent,+QC+H4L+3X9/@45.5144663,-73.6781522,17z/data=!3m1!4b1!4m6!3m5!1s0x4cc9193b0f376acd:0x57f52a612670cfe0!8m2!3d45.5144626!4d-73.6755719!16s%2Fg%2F11t2_hp87g?entry=ttu"
+                                target="_blank"
+                                class="nav-link"
+                                >821 Sainte Croix Ave, Saint-Laurent, Quebec H4L 3X9</a
+                            >
                         </li>
-                        <li>
-                            <img src="Resources/Images/audiConvertible1.jpg" alt="" />
-                            <p><strong>Car Model:</strong> Audi A5</p>
-                            <p><strong>Year:</strong> 2022</p>
-                            <p><strong>Km:</strong> 29,200</p>
-                            <p><strong>Cost:</strong> $59,900</p>
-                            <input type="button" value="Buy" />
+                        <li class="nav-item mb-2">
+                            <a href="#" class="nav-link">(514) 931-8841</a>
                         </li>
-                        <li>
-                            <img src="Resources/Images/bmwCar1.jpg" alt="" />
-                            <p><strong>Car Model:</strong> BMW 230</p>
-                            <p><strong>Year:</strong> 2017</p>
-                            <p><strong>Km:</strong> 114,100</p>
-                            <p><strong>Cost:</strong> $26,995</p>
-                            <input type="button" value="Buy" />
+                        <li class="nav-item mb-2">
+                            <a href="#" class="nav-link">(514) 289-4558</a>
                         </li>
                     </ul>
                 </div>
-            </main>
-            <footer>
-                <ul>
-                    <li>
-                        <a href="">Home</a>
-                    </li>
-                    <li>
-                        <a href="inventory.html">Inventory</a>
-                    </li>
-                    <li>
-                        <a href="financing.html">Financing</a>
-                    </li>
-                    <li>
-                        <a href="">About Us</a>
-                    </li>
-                </ul>
-                <div class="contact">
-                    <img
-                        src="https://static.vecteezy.com/system/resources/previews/000/623/239/original/auto-car-logo-template-vector-icon.jpg"
-                        alt="" />
-                    <p>Address: Por ahi</p>
-                    <p>Tel: 555-555-5555</p>
+
+                <div class="col-md-5 offset-md-1 mb-3">
+                    <form class="form-inline">
+                        <h5>Subscribe to our newsletter</h5>
+                        <p>Monthly digest of what's new and exciting from us.</p>
+                        <div class="row">
+                            <div class="col">
+                                <input id="newsletter" type="text" class="form-control" placeholder="Email address" />
+                            </div>
+                            <div class="col">
+                                <button class="btn btn-primary" type="button">Subscribe</button>
+                            </div>
+                        </div>
+                    </form>
                 </div>
-                <div class="copyright">
-                    <p>@Copyright: Luis Ricardo Azuara Maldonado</p>
-                </div>
-            </footer>
-        </div>
+            </div>
+
+            <div class="d-flex flex-column flex-sm-row justify-content-between py-4 my-4 border-top">
+                <p>© 2024 Prime Riders, Ricardo & Julian Inc. All rights reserved.</p>
+            </div>
+        </footer>
         <!--BoostTrap JS-->
         <script
             src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
