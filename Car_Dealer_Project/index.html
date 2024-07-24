@@ -97,21 +97,15 @@
                 <div class="booking_form d-flex align-items-center justify-content-center">
                     <form class="form-inline">
                         <div class="row">
-                            <div class="col">
+                            <div class="col d-flex align-items-end justify-content-center">
                                 <div class="form-group">
                                     <select
-                                        class="form-select"
+                                        class="form-select mb-2"
                                         id="isTheSameDropOffLocation_input"
                                         name="isTheSameDropOffLocation_input">
                                         <option>Same Drop-Off location</option>
                                         <option>Different Drop-Off location</option>
                                     </select>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="row">
-                            <div class="col d-flex align-items-center justify-content-center">
-                                <div class="form-group">
                                     <label for="pickUpLocation_input">Pick-Up Location</label>
                                     <br />
                                     <select class="form-select" id="pickUpLocation_input" name="pickUpLocation_input">
@@ -124,7 +118,7 @@
                                     </select>
                                 </div>
                             </div>
-                            <div class="col d-flex align-items-center justify-content-center">
+                            <div class="col d-flex align-items-end justify-content-center">
                                 <div class="form-group">
                                     <label for="dropOffLocation_input">Drop-Off Location</label>
                                     <br />
@@ -138,7 +132,7 @@
                                     </select>
                                 </div>
                             </div>
-                            <div class="col d-flex align-items-center justify-content-center">
+                            <div class="col d-flex align-items-end justify-content-center">
                                 <div class="form-group">
                                     <label for="pickUpDate_input">Pick-Up Date</label>
                                     <br />
@@ -149,7 +143,7 @@
                                         name="pickUpDate_input" />
                                 </div>
                             </div>
-                            <div class="col d-flex align-items-center justify-content-center">
+                            <div class="col d-flex align-items-end justify-content-center">
                                 <div class="form-group">
                                     <label for="dropOffDate_input">Drop-Off Date</label>
                                     <br />
@@ -170,7 +164,7 @@
             </section>
         </main>
 
-        <footer class="py-5">
+        <footer class="p-3">
             <div class="row">
                 <div class="col-6 col-md-2 mb-3">
                     <h5>Section</h5>
@@ -197,7 +191,7 @@
                             <a href="inventory.html" class="nav-link">Car/Sedan</a>
                         </li>
                         <li class="nav-item mb-2">
-                            <a href="inventory.html" class="nav-link">SUV/MINIVAN/4X4</a>
+                            <a href="inventory.html" class="nav-link">SUV/Mnivan/4X4</a>
                         </li>
                         <li class="nav-item mb-2">
                             <a href="inventory.html" class="nav-link">Electric</a>
@@ -232,13 +226,16 @@
                 </div>
 
                 <div class="col-md-5 offset-md-1 mb-3">
-                    <form>
+                    <form class="form-inline">
                         <h5>Subscribe to our newsletter</h5>
                         <p>Monthly digest of what's new and exciting from us.</p>
-                        <div class="d-flex flex-column flex-sm-row w-100 gap-2">
-                            <label for="newsletter1" class="visually-hidden">Email address</label>
-                            <input id="newsletter1" type="text" class="form-control" placeholder="Email address" />
-                            <button class="btn btn-primary" type="button">Subscribe</button>
+                        <div class="row">
+                            <div class="col">
+                                <input id="newsletter" type="text" class="form-control" placeholder="Email address" />
+                            </div>
+                            <div class="col">
+                                <button class="btn btn-primary" type="button">Subscribe</button>
+                            </div>
                         </div>
                     </form>
                 </div>
