@@ -1,20 +1,59 @@
-* {
-    font-family: Arial, Helvetica, sans-serif;
+/*Whole Page*/
+
+*,
+*::before,
+*::after {
+    font-family: "Roboto";
     padding: 0;
     margin: 0;
     outline: none;
     list-style-type: none;
+    box-sizing: border-box;
+}
+
+/*Body*/
+
+body {
+    background-color: #000000;
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 100%;
+}
+
+/*Header*/
+@media (min-width: 991px) {
+    .navbar .nav-link::before {
+        content: "";
+        position: absolute;
+        bottom: 0;
+        left: 50%;
+        transform: translateX(-50%);
+        width: 0%;
+        height: 2px;
+        background-color: #ff2d55;
+        visibility: hidden;
+        transition: 0.3s ease-in-out;
+    }
+
+    .navbar .nav-link:hover::before {
+        width: 100%;
+        visibility: visible;
+    }
 }
 
 .navbar {
     margin: 10px;
     border-radius: 25px;
-    background-color: rgba(15, 15, 15, 0.98);
+    background-color: rgba(14, 14, 14, 0.8);
+    backdrop-filter: blur(10px);
     box-shadow: 0 6px 6px rgba(0, 0, 0, 0.7);
 }
 
-.navbar-brand {
+.navbar-brand,
+.navbar .offcanvas-title {
+    font-family: "Oswald";
     font-weight: 600;
+    color: #ffffff;
 }
 
 .navbar-toggler {
@@ -36,73 +75,81 @@
     color: #ffffff;
 }
 
-@media (min-width: 991px) {
-    .navbar .nav-link::before {
-        content: "";
-        position: absolute;
-        bottom: 0;
-        left: 50%;
-        transform: translateX(-50%);
-        width: 0%;
-        height: 2px;
-        background-color: #ff2d55;
-        visibility: hidden;
-        transition: 0.3s ease-in-out;
-    }
-
-    .navbar .nav-link:hover::before {
-        width: 100%;
-        visibility: visible;
-    }
+.navbar .offcanvas {
+    background-color: rgba(14, 14, 14, 0.8);
 }
 
-.offcanvas {
-    background-color: rgba(15, 15, 15, 0.98);
+/*Sections*/
+
+/*Main*/
+.main-section {
+    margin: 95px 2%;
 }
 
-.offcanvas-header {
+/*Title*/
+.title {
+    padding: 20px;
+}
+
+.title h1 {
+    font-family: "Oswald";
+    font-weight: 700;
+    text-align: center;
+    align-content: center;
     color: #ffffff;
+    padding: 20px;
+    border-radius: 10px;
+    width: 100%;
+    margin: 0;
 }
 
+/*Booking*/
 .booking {
     background: url("/Car_Dealer_WEB/Car_Dealer_Project/Resources/Images/booking.jpg") no-repeat top;
+    background-attachment: fixed;
     background-size: cover;
-    width: 100%;
     height: 800px;
-    position: relative;
+    mask-image: linear-gradient(#000000 90%, transparent);
 }
 
-.booking_form {
+.booking-form {
     z-index: 10;
     background-color: rgba(136, 0, 20, 0.44);
     padding: 40px;
     margin: 40px;
     border-radius: 20px;
+    width: 82%;
+    backdrop-filter: blur(5px);
     box-shadow: 0 6px 6px rgba(0, 0, 0, 0.7);
 }
 
-.form-select {
+.booking-form form {
+    width: 95%;
+}
+
+.booking-form form .form-select {
     width: 240px;
 }
 
-.form-control {
+.booking-form form .form-control {
     width: 240px;
 }
 
-.form-inline label {
+.booking-form form label {
     color: #d6d6d6;
     font-weight: 700;
 }
 
-.form-inline .col {
+.booking-form form .col-auto {
     margin: 5px;
 }
 
-.booking_form .btn {
+.booking-form form .btn {
     background-color: #141414;
     border: none;
     font-weight: 700;
-    width: 200px;
+    width: 240px;
+    height: 40px;
 }
 
 .booking::before {
@@ -114,60 +161,18 @@
     left: 0;
     bottom: 0;
 }
-
-footer {
-    background-color: #000000;
+/*Popular Models*/
+.popular-models {
+    margin: 20px 0 60px 0;
 }
 
-footer h5 {
-    color: #ffffff;
-    font-weight: 540;
-    margin: 10px;
-}
-
-footer p {
-    color: #c4c4c4;
-    margin: 15px;
-}
-
-body {
-    background: linear-gradient(to bottom left, #ff2d55, #bb003e, #000000);
-    background-repeat: no-repeat;
-    background-size: cover;
-    width: 100%;
-}
-
-main {
-    padding-bottom: 20px;
-    border-radius: 10px;
-}
-
-main .title h1 {
-    font-weight: 700;
-    margin: 20px;
-    text-align: center;
-    background-color: rgba(136, 0, 20, 0.44);
-    color: #ffffff;
-    padding: 20px;
-    border-radius: 10px;
-    width: 100%;
-}
-
-.page {
-    margin-top: 95px;
-    background-color: rgba(0, 0, 0, 0.9);
-    width: 95%;
-    border-radius: 10px;
-    position: relative;
-    padding: 30px;
-}
-
+/*Filters*/
 .filters {
     float: left;
-    margin: 0px -20px 0px 20px;
     border: 1px solid #c0c0c0;
     border-radius: 5px;
     height: fit-content;
+    margin: 0 20px 0 0;
 }
 
 .filters p {
@@ -181,21 +186,42 @@ main .title h1 {
     width: 150px;
 }
 
+/*Cars*/
+
+.inventory-main-container {
+    padding: 20px;
+    width: 100%;
+}
 .cars {
     color: #ffff;
-    display: inline-block;
+    width: 100%;
 }
 
-.cars li {
-    width: 250px;
-    display: inline-block;
-    border: 1px solid #c0c0c0;
-    border-radius: 10px;
-    margin: 0px 10px 10px;
-    padding: 20px;
+.cars .col-auto {
+    margin: 30px;
 }
-.cars li:hover {
-    box-shadow: 0 0 15px #ff3b58;
+
+.cars .car-container {
+    width: 250px;
+    color: #000000;
+    border: none;
+    border-radius: 10px;
+    margin: 10px;
+    padding: 20px;
+    background-color: rgba(255, 255, 255, 0.98);
+    backdrop-filter: (5px);
+    transition:
+        transform 0.4s,
+        box-shadow 0.4s;
+}
+
+.cars .car-container:hover {
+    transform: scale(1.02);
+    box-shadow: 0 0 15px rgba(255, 255, 255, 0.48);
+}
+
+.cars .car-container p {
+    font-weight: 500;
 }
 
 .cars img {
@@ -215,21 +241,28 @@ main .title h1 {
     background-color: #ffff80;
 }
 
+/*Financing*/
 .financing {
     padding: 20px;
 }
 
 .financing .bank {
     display: inline-block;
-    border: 1px solid #c0c0c0;
+
     border-radius: 10px;
     width: 300px;
     height: 250px;
     padding: 20px;
     margin: 25px;
+    background-color: rgba(255, 255, 255, 0.98);
+    backdrop-filter: (5px);
+    transition:
+        transform 0.4s,
+        box-shadow 0.4s;
 }
 .financing .bank:hover {
-    box-shadow: 0 0 15px #ff3b58;
+    transform: scale(1.02);
+    box-shadow: 0 0 15px rgba(255, 255, 255, 0.48);
 }
 
 .financing a {
@@ -247,5 +280,38 @@ main .title h1 {
     text-decoration: none;
     text-align: center;
     margin-top: 10px;
+    color: #000000;
+}
+
+/*About us*/
+
+.about-us .image {
+    background: url("/Car_Dealer_WEB/Car_Dealer_Project/Resources/Images/About%20Us.jpg") no-repeat;
+    background-size: cover;
+    height: 700px;
+    width: 600px;
+    border-radius: 10px;
+    mask-image: linear-gradient(to right, #000000 50%, transparent);
+}
+
+.about-us .description {
+    align-content: center;
     color: #ffffff;
+    width: 30%;
+}
+
+/*Footer*/
+footer {
+    background-color: #000000;
+}
+
+footer h5 {
+    color: #ffffff;
+    font-weight: 540;
+    margin: 10px;
+}
+
+footer p {
+    color: #c4c4c4;
+    margin: 15px;
 }
