@@ -19,7 +19,7 @@
         <header>
             <nav class="navbar navbar-dark navbar-expand-lg fixed-top">
                 <div class="container-fluid">
-                    <a class="navbar-brand" href="#">
+                    <a class="navbar-brand" href="index.html">
                         <img
                             src="Resources/Images/Prime%20Riders.png"
                             alt="Logo"
@@ -78,7 +78,7 @@
                                     </ul>
                                 </li>
                                 <li class="nav-item">
-                                    <a class="nav-link" href="financing.html" target="_blank">Financing</a>
+                                    <a class="nav-link" href="financing.html">Financing</a>
                                 </li>
                                 <li class="nav-item">
                                     <a class="nav-link" href="about.html">About us</a>
@@ -93,16 +93,16 @@
             </nav>
         </header>
 
-        <main class="d-flex justify-content-center">
-            <div class="page">
-                <div class="title d-flex justify-content-center">
+        <main>
+            <section class="main-section">
+                <section class="title">
                     <h1>Cars Inventory</h1>
-                </div>
-                <section class="d-flex">
-                    <div class="filters p-4 d-g">
+                </section>
+                <section class="inventory-main-container d-flex">
+                    <section class="filters p-4">
                         <div class>
                             <p>Search</p>
-                            <input class="form-control m-2" type="text" placeholder="Search for a car" />
+                            <input class="form-control" type="text" placeholder="Search for a car" />
                         </div>
 
                         <div>
@@ -147,332 +147,693 @@
                                 <button class="btn btn-dark m-2">Toyota</button>
                             </div>
                         </div>
-                    </div>
-                    <div class="cars">
-                        <ul>
-                            <li>
-                                <div id="audiCar" class="carousel slide">
-                                    <div class="carousel-indicators">
-                                      <button type="button" data-bs-target="#audiCar" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
-                                      <button type="button" data-bs-target="#audiCar" data-bs-slide-to="1" aria-label="Slide 2"></button>
-                                      <button type="button" data-bs-target="#audiCar" data-bs-slide-to="2" aria-label="Slide 3"></button>
-                                      <button type="button" data-bs-target="#audiCar" data-bs-slide-to="3" aria-label="Slide 4"></button>
+                    </section>
+
+                    <section class="cars">
+                        <div class="row flex-row justify-content-center">
+                            <div class="col-auto">
+                                <div class="car-container">
+                                    <div id="car1" class="carousel slide">
+                                        <div class="carousel-indicators">
+                                            <button
+                                                type="button"
+                                                data-bs-target="#car1"
+                                                data-bs-slide-to="0"
+                                                class="active"
+                                                aria-current="true"
+                                                aria-label="Slide 1"></button>
+                                            <button
+                                                type="button"
+                                                data-bs-target="#car1"
+                                                data-bs-slide-to="1"
+                                                aria-label="Slide 2"></button>
+                                            <button
+                                                type="button"
+                                                data-bs-target="#car1"
+                                                data-bs-slide-to="2"
+                                                aria-label="Slide 3"></button>
+                                            <button
+                                                type="button"
+                                                data-bs-target="#car1"
+                                                data-bs-slide-to="3"
+                                                aria-label="Slide 4"></button>
+                                        </div>
+                                        <div class="carousel-inner">
+                                            <div class="carousel-item active">
+                                                <img
+                                                    src="Resources/Images/cars/audiCar1.png"
+                                                    class="d-block w-100"
+                                                    alt="" />
+                                            </div>
+                                            <div class="carousel-item">
+                                                <img
+                                                    src="Resources/Images/cars/audiCar2.png"
+                                                    class="d-block w-100"
+                                                    alt="" />
+                                            </div>
+                                            <div class="carousel-item">
+                                                <img
+                                                    src="Resources/Images/cars/audiCar3.png"
+                                                    class="d-block w-100"
+                                                    alt="" />
+                                            </div>
+                                            <div class="carousel-item">
+                                                <img
+                                                    src="Resources/Images/cars/audiCar4.png"
+                                                    class="d-block w-100"
+                                                    alt="" />
+                                            </div>
+                                        </div>
+                                        <button
+                                            class="carousel-control-prev"
+                                            type="button"
+                                            data-bs-target="#car1"
+                                            data-bs-slide="prev">
+                                            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                                            <span class="visually-hidden">Previous</span>
+                                        </button>
+                                        <button
+                                            class="carousel-control-next"
+                                            type="button"
+                                            data-bs-target="#car1"
+                                            data-bs-slide="next">
+                                            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                                            <span class="visually-hidden">Next</span>
+                                        </button>
                                     </div>
-                                    <div class="carousel-inner">
-                                      <div class="carousel-item active">
-                                        <img src="Resources/Images/cars/audiCar1.png" class="d-block w-100" alt="">
-                                      </div>
-                                      <div class="carousel-item">
-                                        <img src="Resources/Images/cars/audiCar2.png" class="d-block w-100" alt="">
-                                      </div>
-                                      <div class="carousel-item">
-                                        <img src="Resources/Images/cars/audiCar3.png" class="d-block w-100" alt="">
-                                      </div>
-                                      <div class="carousel-item">
-                                        <img src="Resources/Images/cars/audiCar4.png" class="d-block w-100" alt="">
-                                      </div>
-                                    </div>
-                                    <button class="carousel-control-prev" type="button" data-bs-target="#audiCar" data-bs-slide="prev">
-                                      <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-                                      <span class="visually-hidden">Previous</span>
-                                    </button>
-                                    <button class="carousel-control-next" type="button" data-bs-target="#audiCar" data-bs-slide="next">
-                                      <span class="carousel-control-next-icon" aria-hidden="true"></span>
-                                      <span class="visually-hidden">Next</span>
-                                    </button>
+                                    <p><strong>Car Model:</strong> Audi A5</p>
+                                    <p><strong>Cost:</strong> $199</p>
+                                    <button class="btn btn-dark">Rent</button>
                                 </div>
-                                <p><strong>Car Model:</strong> Audi A5</p>
-                                <p><strong>Cost:</strong> $199</p>
-                                <button class="btn btn-dark">Rent</button>
-                            </li>
-                            <li>
-                                <div id="kiaCar" class="carousel slide">
-                                    <div class="carousel-indicators">
-                                      <button type="button" data-bs-target="#kiaCar" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
-                                      <button type="button" data-bs-target="#kiaCar" data-bs-slide-to="1" aria-label="Slide 2"></button>
-                                      <button type="button" data-bs-target="#kiaCar" data-bs-slide-to="2" aria-label="Slide 3"></button>
-                                      <button type="button" data-bs-target="#kiaCar" data-bs-slide-to="3" aria-label="Slide 4"></button>
+                            </div>
+                            <div class="col-auto">
+                                <div class="car-container">
+                                    <div id="car2" class="carousel slide">
+                                        <div class="carousel-indicators">
+                                            <button
+                                                type="button"
+                                                data-bs-target="#car2"
+                                                data-bs-slide-to="0"
+                                                class="active"
+                                                aria-current="true"
+                                                aria-label="Slide 1"></button>
+                                            <button
+                                                type="button"
+                                                data-bs-target="#car2"
+                                                data-bs-slide-to="1"
+                                                aria-label="Slide 2"></button>
+                                            <button
+                                                type="button"
+                                                data-bs-target="#car2"
+                                                data-bs-slide-to="2"
+                                                aria-label="Slide 3"></button>
+                                            <button
+                                                type="button"
+                                                data-bs-target="#car2"
+                                                data-bs-slide-to="3"
+                                                aria-label="Slide 4"></button>
+                                        </div>
+                                        <div class="carousel-inner">
+                                            <div class="carousel-item active">
+                                                <img
+                                                    src="Resources/Images/cars/kiaCar1.png"
+                                                    class="d-block w-100"
+                                                    alt="" />
+                                            </div>
+                                            <div class="carousel-item">
+                                                <img
+                                                    src="Resources/Images/cars/kiaCar2.png"
+                                                    class="d-block w-100"
+                                                    alt="" />
+                                            </div>
+                                            <div class="carousel-item">
+                                                <img
+                                                    src="Resources/Images/cars/kiaCar3.png"
+                                                    class="d-block w-100"
+                                                    alt="" />
+                                            </div>
+                                            <div class="carousel-item">
+                                                <img
+                                                    src="Resources/Images/cars/kiaCar4.png"
+                                                    class="d-block w-100"
+                                                    alt="" />
+                                            </div>
+                                        </div>
+                                        <button
+                                            class="carousel-control-prev"
+                                            type="button"
+                                            data-bs-target="#car2"
+                                            data-bs-slide="prev">
+                                            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                                            <span class="visually-hidden">Previous</span>
+                                        </button>
+                                        <button
+                                            class="carousel-control-next"
+                                            type="button"
+                                            data-bs-target="#car2"
+                                            data-bs-slide="next">
+                                            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                                            <span class="visually-hidden">Next</span>
+                                        </button>
                                     </div>
-                                    <div class="carousel-inner">
-                                      <div class="carousel-item active">
-                                        <img src="Resources/Images/cars/kiaCar1.png" class="d-block w-100" alt="">
-                                      </div>
-                                      <div class="carousel-item">
-                                        <img src="Resources/Images/cars/kiaCar2.png" class="d-block w-100" alt="">
-                                      </div>
-                                      <div class="carousel-item">
-                                        <img src="Resources/Images/cars/kiaCar3.png" class="d-block w-100" alt="">
-                                      </div>
-                                      <div class="carousel-item">
-                                        <img src="Resources/Images/cars/kiaCar4.png" class="d-block w-100" alt="">
-                                      </div>
-                                    </div>
-                                    <button class="carousel-control-prev" type="button" data-bs-target="#kiaCar" data-bs-slide="prev">
-                                      <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-                                      <span class="visually-hidden">Previous</span>
-                                    </button>
-                                    <button class="carousel-control-next" type="button" data-bs-target="#kiaCar" data-bs-slide="next">
-                                      <span class="carousel-control-next-icon" aria-hidden="true"></span>
-                                      <span class="visually-hidden">Next</span>
-                                    </button>
+                                    <p><strong>Car Model:</strong> KIA Rio</p>
+                                    <p><strong>Cost:</strong> $177</p>
+                                    <button class="btn btn-dark">Rent</button>
                                 </div>
-                                <p><strong>Car Model:</strong> KIA Rio</p>
-                                <p><strong>Cost:</strong> $177</p>
-                                <button class="btn btn-dark">Rent</button>
-                            </li>
-                            <li>
-                                <div id="fordConvertible" class="carousel slide">
-                                    <div class="carousel-indicators">
-                                      <button type="button" data-bs-target="#fordConvertible" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
-                                      <button type="button" data-bs-target="#fordConvertible" data-bs-slide-to="1" aria-label="Slide 2"></button>
-                                      <button type="button" data-bs-target="#fordConvertible" data-bs-slide-to="2" aria-label="Slide 3"></button>
-                                      <button type="button" data-bs-target="#fordConvertible" data-bs-slide-to="3" aria-label="Slide 4"></button>
+                            </div>
+                            <div class="col-auto">
+                                <div class="car-container">
+                                    <div id="car3" class="carousel slide">
+                                        <div class="carousel-indicators">
+                                            <button
+                                                type="button"
+                                                data-bs-target="#car3"
+                                                data-bs-slide-to="0"
+                                                class="active"
+                                                aria-current="true"
+                                                aria-label="Slide 1"></button>
+                                            <button
+                                                type="button"
+                                                data-bs-target="#car3"
+                                                data-bs-slide-to="1"
+                                                aria-label="Slide 2"></button>
+                                            <button
+                                                type="button"
+                                                data-bs-target="#car3"
+                                                data-bs-slide-to="2"
+                                                aria-label="Slide 3"></button>
+                                            <button
+                                                type="button"
+                                                data-bs-target="#car3"
+                                                data-bs-slide-to="3"
+                                                aria-label="Slide 4"></button>
+                                        </div>
+                                        <div class="carousel-inner">
+                                            <div class="carousel-item active">
+                                                <img
+                                                    src="Resources/Images/convertibles/mustangConvertible1.png"
+                                                    class="d-block w-100"
+                                                    alt="" />
+                                            </div>
+                                            <div class="carousel-item">
+                                                <img
+                                                    src="Resources/Images/convertibles/mustangConvertible2.png"
+                                                    class="d-block w-100"
+                                                    alt="" />
+                                            </div>
+                                            <div class="carousel-item">
+                                                <img
+                                                    src="Resources/Images/convertibles/mustangConvertible3.png"
+                                                    class="d-block w-100"
+                                                    alt="" />
+                                            </div>
+                                            <div class="carousel-item">
+                                                <img
+                                                    src="Resources/Images/convertibles/mustangConvertible4.png"
+                                                    class="d-block w-100"
+                                                    alt="" />
+                                            </div>
+                                        </div>
+                                        <button
+                                            class="carousel-control-prev"
+                                            type="button"
+                                            data-bs-target="#car3"
+                                            data-bs-slide="prev">
+                                            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                                            <span class="visually-hidden">Previous</span>
+                                        </button>
+                                        <button
+                                            class="carousel-control-next"
+                                            type="button"
+                                            data-bs-target="#car3"
+                                            data-bs-slide="next">
+                                            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                                            <span class="visually-hidden">Next</span>
+                                        </button>
                                     </div>
-                                    <div class="carousel-inner">
-                                      <div class="carousel-item active">
-                                        <img src="Resources/Images/convertibles/mustangConvertible1.png" class="d-block w-100" alt="">
-                                      </div>
-                                      <div class="carousel-item">
-                                        <img src="Resources/Images/convertibles/mustangConvertible2.png" class="d-block w-100" alt="">
-                                      </div>
-                                      <div class="carousel-item">
-                                        <img src="Resources/Images/convertibles/mustangConvertible3.png" class="d-block w-100" alt="">
-                                      </div>
-                                      <div class="carousel-item">
-                                        <img src="Resources/Images/convertibles/mustangConvertible4.png" class="d-block w-100" alt="">
-                                      </div>
-                                    </div>
-                                    <button class="carousel-control-prev" type="button" data-bs-target="#fordConvertible" data-bs-slide="prev">
-                                      <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-                                      <span class="visually-hidden">Previous</span>
-                                    </button>
-                                    <button class="carousel-control-next" type="button" data-bs-target="#fordConvertible" data-bs-slide="next">
-                                      <span class="carousel-control-next-icon" aria-hidden="true"></span>
-                                      <span class="visually-hidden">Next</span>
-                                    </button>
+                                    <p><strong>Car Model:</strong> Ford Mustang</p>
+                                    <p><strong>Cost:</strong> $250</p>
+                                    <button class="btn btn-dark">Rent</button>
                                 </div>
-                                <p><strong>Car Model:</strong> Ford Mustang</p>
-                                <p><strong>Cost:</strong> $250</p>
-                                <button class="btn btn-dark">Rent</button>
-                            </li>
-                        </ul>
-                        <ul>
-                            <li>
-                                <div id="bmwElectric" class="carousel slide">
-                                    <div class="carousel-indicators">
-                                      <button type="button" data-bs-target="#bmwElectric" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
-                                      <button type="button" data-bs-target="#bmwElectric" data-bs-slide-to="1" aria-label="Slide 2"></button>
-                                      <button type="button" data-bs-target="#bmwElectric" data-bs-slide-to="2" aria-label="Slide 3"></button>
-                                      <button type="button" data-bs-target="#bmwElectric" data-bs-slide-to="3" aria-label="Slide 4"></button>
+                            </div>
+                        </div>
+                        <div class="row flex-row justify-content-center">
+                            <div class="col-auto">
+                                <div class="car-container">
+                                    <div id="car4" class="carousel slide">
+                                        <div class="carousel-indicators">
+                                            <button
+                                                type="button"
+                                                data-bs-target="#car4"
+                                                data-bs-slide-to="0"
+                                                class="active"
+                                                aria-current="true"
+                                                aria-label="Slide 1"></button>
+                                            <button
+                                                type="button"
+                                                data-bs-target="#car4"
+                                                data-bs-slide-to="1"
+                                                aria-label="Slide 2"></button>
+                                            <button
+                                                type="button"
+                                                data-bs-target="#car4"
+                                                data-bs-slide-to="2"
+                                                aria-label="Slide 3"></button>
+                                            <button
+                                                type="button"
+                                                data-bs-target="#car4"
+                                                data-bs-slide-to="3"
+                                                aria-label="Slide 4"></button>
+                                        </div>
+                                        <div class="carousel-inner">
+                                            <div class="carousel-item active">
+                                                <img
+                                                    src="Resources/Images/electrics/bmwElectric1.png"
+                                                    class="d-block w-100"
+                                                    alt="" />
+                                            </div>
+                                            <div class="carousel-item">
+                                                <img
+                                                    src="Resources/Images/electrics/bmwElectric2.png"
+                                                    class="d-block w-100"
+                                                    alt="" />
+                                            </div>
+                                            <div class="carousel-item">
+                                                <img
+                                                    src="Resources/Images/electrics/bmwElectric3.png"
+                                                    class="d-block w-100"
+                                                    alt="" />
+                                            </div>
+                                            <div class="carousel-item">
+                                                <img
+                                                    src="Resources/Images/electrics/bmwElectric4.png"
+                                                    class="d-block w-100"
+                                                    alt="" />
+                                            </div>
+                                        </div>
+                                        <button
+                                            class="carousel-control-prev"
+                                            type="button"
+                                            data-bs-target="#car4"
+                                            data-bs-slide="prev">
+                                            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                                            <span class="visually-hidden">Previous</span>
+                                        </button>
+                                        <button
+                                            class="carousel-control-next"
+                                            type="button"
+                                            data-bs-target="#car4"
+                                            data-bs-slide="next">
+                                            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                                            <span class="visually-hidden">Next</span>
+                                        </button>
                                     </div>
-                                    <div class="carousel-inner">
-                                      <div class="carousel-item active">
-                                        <img src="Resources/Images/electrics/bmwElectric1.png" class="d-block w-100" alt="">
-                                      </div>
-                                      <div class="carousel-item">
-                                        <img src="Resources/Images/electrics/bmwElectric2.png" class="d-block w-100" alt="">
-                                      </div>
-                                      <div class="carousel-item">
-                                        <img src="Resources/Images/electrics/bmwElectric3.png" class="d-block w-100" alt="">
-                                      </div>
-                                      <div class="carousel-item">
-                                        <img src="Resources/Images/electrics/bmwElectric4.png" class="d-block w-100" alt="">
-                                      </div>
-                                    </div>
-                                    <button class="carousel-control-prev" type="button" data-bs-target="#bmwElectric" data-bs-slide="prev">
-                                      <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-                                      <span class="visually-hidden">Previous</span>
-                                    </button>
-                                    <button class="carousel-control-next" type="button" data-bs-target="#bmwElectric" data-bs-slide="next">
-                                      <span class="carousel-control-next-icon" aria-hidden="true"></span>
-                                      <span class="visually-hidden">Next</span>
-                                    </button>
+                                    <p><strong>Car Model:</strong> BMW I4</p>
+                                    <p><strong>Cost:</strong> $215</p>
+                                    <button class="btn btn-dark">Rent</button>
                                 </div>
-                                <p><strong>Car Model:</strong> BMW I4</p>
-                                <p><strong>Cost:</strong> $215</p>
-                                <button class="btn btn-dark">Rent</button>
-                            </li>
-                            <li>
-                                <div id="teslaElectric" class="carousel slide">
-                                    <div class="carousel-indicators">
-                                      <button type="button" data-bs-target="#teslaElectric" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
-                                      <button type="button" data-bs-target="#teslaElectric" data-bs-slide-to="1" aria-label="Slide 2"></button>
-                                      <button type="button" data-bs-target="#teslaElectric" data-bs-slide-to="2" aria-label="Slide 3"></button>
-                                      <button type="button" data-bs-target="#teslaElectric" data-bs-slide-to="3" aria-label="Slide 4"></button>
+                            </div>
+                            <div class="col-auto">
+                                <div class="car-container">
+                                    <div id="car5" class="carousel slide">
+                                        <div class="carousel-indicators">
+                                            <button
+                                                type="button"
+                                                data-bs-target="#car5"
+                                                data-bs-slide-to="0"
+                                                class="active"
+                                                aria-current="true"
+                                                aria-label="Slide 1"></button>
+                                            <button
+                                                type="button"
+                                                data-bs-target="#car5"
+                                                data-bs-slide-to="1"
+                                                aria-label="Slide 2"></button>
+                                            <button
+                                                type="button"
+                                                data-bs-target="#car5"
+                                                data-bs-slide-to="2"
+                                                aria-label="Slide 3"></button>
+                                            <button
+                                                type="button"
+                                                data-bs-target="#car5"
+                                                data-bs-slide-to="3"
+                                                aria-label="Slide 4"></button>
+                                        </div>
+                                        <div class="carousel-inner">
+                                            <div class="carousel-item active">
+                                                <img
+                                                    src="Resources/Images/electrics/teslaElectric1.png"
+                                                    class="d-block w-100"
+                                                    alt="" />
+                                            </div>
+                                            <div class="carousel-item">
+                                                <img
+                                                    src="Resources/Images/electrics/teslaElectric2.png"
+                                                    class="d-block w-100"
+                                                    alt="" />
+                                            </div>
+                                            <div class="carousel-item">
+                                                <img
+                                                    src="Resources/Images/electrics/teslaElectric3.png"
+                                                    class="d-block w-100"
+                                                    alt="" />
+                                            </div>
+                                            <div class="carousel-item">
+                                                <img
+                                                    src="Resources/Images/electrics/teslaElectric4.png"
+                                                    class="d-block w-100"
+                                                    alt="" />
+                                            </div>
+                                        </div>
+                                        <button
+                                            class="carousel-control-prev"
+                                            type="button"
+                                            data-bs-target="#car5"
+                                            data-bs-slide="prev">
+                                            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                                            <span class="visually-hidden">Previous</span>
+                                        </button>
+                                        <button
+                                            class="carousel-control-next"
+                                            type="button"
+                                            data-bs-target="#car5"
+                                            data-bs-slide="next">
+                                            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                                            <span class="visually-hidden">Next</span>
+                                        </button>
                                     </div>
-                                    <div class="carousel-inner">
-                                      <div class="carousel-item active">
-                                        <img src="Resources/Images/electrics/teslaElectric1.png" class="d-block w-100" alt="">
-                                      </div>
-                                      <div class="carousel-item">
-                                        <img src="Resources/Images/electrics/teslaElectric2.png" class="d-block w-100" alt="">
-                                      </div>
-                                      <div class="carousel-item">
-                                        <img src="Resources/Images/electrics/teslaElectric3.png" class="d-block w-100" alt="">
-                                      </div>
-                                      <div class="carousel-item">
-                                        <img src="Resources/Images/electrics/teslaElectric4.png" class="d-block w-100" alt="">
-                                      </div>
-                                    </div>
-                                    <button class="carousel-control-prev" type="button" data-bs-target="#teslaElectric" data-bs-slide="prev">
-                                      <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-                                      <span class="visually-hidden">Previous</span>
-                                    </button>
-                                    <button class="carousel-control-next" type="button" data-bs-target="#teslaElectric" data-bs-slide="next">
-                                      <span class="carousel-control-next-icon" aria-hidden="true"></span>
-                                      <span class="visually-hidden">Next</span>
-                                    </button>
+                                    <p><strong>Car Model:</strong> Tesla 3 LR</p>
+                                    <p><strong>Cost:</strong> $215</p>
+                                    <button class="btn btn-dark">Rent</button>
                                 </div>
-                                <p><strong>Car Model:</strong> Tesla 3 LR</p>
-                                <p><strong>Cost:</strong> $215</p>
-                                <button class="btn btn-dark">Rent</button>
-                            </li>
-                            <li>
-                                <div id="audiLuxury" class="carousel slide">
-                                    <div class="carousel-indicators">
-                                      <button type="button" data-bs-target="#audiLuxury" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
-                                      <button type="button" data-bs-target="#audiLuxury" data-bs-slide-to="1" aria-label="Slide 2"></button>
-                                      <button type="button" data-bs-target="#audiLuxury" data-bs-slide-to="2" aria-label="Slide 3"></button>
-                                      <button type="button" data-bs-target="#audiLuxury" data-bs-slide-to="3" aria-label="Slide 4"></button>
+                            </div>
+                            <div class="col-auto">
+                                <div class="car-container">
+                                    <div id="car6" class="carousel slide">
+                                        <div class="carousel-indicators">
+                                            <button
+                                                type="button"
+                                                data-bs-target="#car6"
+                                                data-bs-slide-to="0"
+                                                class="active"
+                                                aria-current="true"
+                                                aria-label="Slide 1"></button>
+                                            <button
+                                                type="button"
+                                                data-bs-target="#car6"
+                                                data-bs-slide-to="1"
+                                                aria-label="Slide 2"></button>
+                                            <button
+                                                type="button"
+                                                data-bs-target="#car6"
+                                                data-bs-slide-to="2"
+                                                aria-label="Slide 3"></button>
+                                            <button
+                                                type="button"
+                                                data-bs-target="#car6"
+                                                data-bs-slide-to="3"
+                                                aria-label="Slide 4"></button>
+                                        </div>
+                                        <div class="carousel-inner">
+                                            <div class="carousel-item active">
+                                                <img
+                                                    src="Resources/Images/luxury/audiLuxury1.png"
+                                                    class="d-block w-100"
+                                                    alt="" />
+                                            </div>
+                                            <div class="carousel-item">
+                                                <img
+                                                    src="Resources/Images/luxury/audiLuxury2.png"
+                                                    class="d-block w-100"
+                                                    alt="" />
+                                            </div>
+                                            <div class="carousel-item">
+                                                <img
+                                                    src="Resources/Images/luxury/audiLuxury3.png"
+                                                    class="d-block w-100"
+                                                    alt="" />
+                                            </div>
+                                            <div class="carousel-item">
+                                                <img
+                                                    src="Resources/Images/luxury/audiLuxury4.png"
+                                                    class="d-block w-100"
+                                                    alt="" />
+                                            </div>
+                                        </div>
+                                        <button
+                                            class="carousel-control-prev"
+                                            type="button"
+                                            data-bs-target="#car6"
+                                            data-bs-slide="prev">
+                                            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                                            <span class="visually-hidden">Previous</span>
+                                        </button>
+                                        <button
+                                            class="carousel-control-next"
+                                            type="button"
+                                            data-bs-target="#car6"
+                                            data-bs-slide="next">
+                                            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                                            <span class="visually-hidden">Next</span>
+                                        </button>
                                     </div>
-                                    <div class="carousel-inner">
-                                      <div class="carousel-item active">
-                                        <img src="Resources/Images/luxury/audiLuxury1.png" class="d-block w-100" alt="">
-                                      </div>
-                                      <div class="carousel-item">
-                                        <img src="Resources/Images/luxury/audiLuxury2.png" class="d-block w-100" alt="">
-                                      </div>
-                                      <div class="carousel-item">
-                                        <img src="Resources/Images/luxury/audiLuxury3.png" class="d-block w-100" alt="">
-                                      </div>
-                                      <div class="carousel-item">
-                                        <img src="Resources/Images/luxury/audiLuxury4.png" class="d-block w-100" alt="">
-                                      </div>
-                                    </div>
-                                    <button class="carousel-control-prev" type="button" data-bs-target="#audiLuxury" data-bs-slide="prev">
-                                      <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-                                      <span class="visually-hidden">Previous</span>
-                                    </button>
-                                    <button class="carousel-control-next" type="button" data-bs-target="#audiLuxury" data-bs-slide="next">
-                                      <span class="carousel-control-next-icon" aria-hidden="true"></span>
-                                      <span class="visually-hidden">Next</span>
-                                    </button>
+                                    <p><strong>Car Model:</strong> Audi A4</p>
+                                    <p><strong>Cost:</strong> $217</p>
+                                    <button class="btn btn-dark">Rent</button>
                                 </div>
-                                <p><strong>Car Model:</strong> Audi A4</p>
-                                <p><strong>Cost:</strong> $217</p>
-                                <button class="btn btn-dark">Rent</button>
-                            </li>
-                        </ul>
-                        <ul>
-                            <li>
-                                <div id="porscheLuxury" class="carousel slide">
-                                    <div class="carousel-indicators">
-                                      <button type="button" data-bs-target="#porscheLuxury" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
-                                      <button type="button" data-bs-target="#porscheLuxury" data-bs-slide-to="1" aria-label="Slide 2"></button>
-                                      <button type="button" data-bs-target="#porscheLuxury" data-bs-slide-to="2" aria-label="Slide 3"></button>
-                                      <button type="button" data-bs-target="#porscheLuxury" data-bs-slide-to="3" aria-label="Slide 4"></button>
+                            </div>
+                        </div>
+                        <div class="row flex-row justify-content-center">
+                            <div class="col-auto">
+                                <div class="car-container">
+                                    <div id="car7" class="carousel slide">
+                                        <div class="carousel-indicators">
+                                            <button
+                                                type="button"
+                                                data-bs-target="#car7"
+                                                data-bs-slide-to="0"
+                                                class="active"
+                                                aria-current="true"
+                                                aria-label="Slide 1"></button>
+                                            <button
+                                                type="button"
+                                                data-bs-target="#car7"
+                                                data-bs-slide-to="1"
+                                                aria-label="Slide 2"></button>
+                                            <button
+                                                type="button"
+                                                data-bs-target="#car7"
+                                                data-bs-slide-to="2"
+                                                aria-label="Slide 3"></button>
+                                            <button
+                                                type="button"
+                                                data-bs-target="#car7"
+                                                data-bs-slide-to="3"
+                                                aria-label="Slide 4"></button>
+                                        </div>
+                                        <div class="carousel-inner">
+                                            <div class="carousel-item active">
+                                                <img
+                                                    src="Resources/Images/luxury/porscheLuxury1.png"
+                                                    class="d-block w-100"
+                                                    alt="" />
+                                            </div>
+                                            <div class="carousel-item">
+                                                <img
+                                                    src="Resources/Images/luxury/porscheLuxury2.png"
+                                                    class="d-block w-100"
+                                                    alt="" />
+                                            </div>
+                                            <div class="carousel-item">
+                                                <img
+                                                    src="Resources/Images/luxury/porscheLuxury3.png"
+                                                    class="d-block w-100"
+                                                    alt="" />
+                                            </div>
+                                            <div class="carousel-item">
+                                                <img
+                                                    src="Resources/Images/luxury/porscheLuxury4.png"
+                                                    class="d-block w-100"
+                                                    alt="" />
+                                            </div>
+                                        </div>
+                                        <button
+                                            class="carousel-control-prev"
+                                            type="button"
+                                            data-bs-target="#car7"
+                                            data-bs-slide="prev">
+                                            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                                            <span class="visually-hidden">Previous</span>
+                                        </button>
+                                        <button
+                                            class="carousel-control-next"
+                                            type="button"
+                                            data-bs-target="#car7"
+                                            data-bs-slide="next">
+                                            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                                            <span class="visually-hidden">Next</span>
+                                        </button>
                                     </div>
-                                    <div class="carousel-inner">
-                                      <div class="carousel-item active">
-                                        <img src="Resources/Images/luxury/porscheLuxury1.png" class="d-block w-100" alt="">
-                                      </div>
-                                      <div class="carousel-item">
-                                        <img src="Resources/Images/luxury/porscheLuxury2.png" class="d-block w-100" alt="">
-                                      </div>
-                                      <div class="carousel-item">
-                                        <img src="Resources/Images/luxury/porscheLuxury3.png" class="d-block w-100" alt="">
-                                      </div>
-                                      <div class="carousel-item">
-                                        <img src="Resources/Images/luxury/porscheLuxury4.png" class="d-block w-100" alt="">
-                                      </div>
-                                    </div>
-                                    <button class="carousel-control-prev" type="button" data-bs-target="#porscheLuxury" data-bs-slide="prev">
-                                      <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-                                      <span class="visually-hidden">Previous</span>
-                                    </button>
-                                    <button class="carousel-control-next" type="button" data-bs-target="#porscheLuxury" data-bs-slide="next">
-                                      <span class="carousel-control-next-icon" aria-hidden="true"></span>
-                                      <span class="visually-hidden">Next</span>
-                                    </button>
+                                    <p><strong>Car Model:</strong> Porsche 911</p>
+                                    <p><strong>Cost:</strong> $255</p>
+                                    <button class="btn btn-dark">Rent</button>
                                 </div>
-                                <p><strong>Car Model:</strong> Porsche 911</p>
-                                <p><strong>Cost:</strong> $255</p>
-                                <button class="btn btn-dark">Rent</button>
-                            </li>
-                            <li>
-                                <div id="fordSuv" class="carousel slide">
-                                    <div class="carousel-indicators">
-                                      <button type="button" data-bs-target="#fordSuv" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
-                                      <button type="button" data-bs-target="#fordSuv" data-bs-slide-to="1" aria-label="Slide 2"></button>
-                                      <button type="button" data-bs-target="#fordSuv" data-bs-slide-to="2" aria-label="Slide 3"></button>
-                                      <button type="button" data-bs-target="#fordSuv" data-bs-slide-to="3" aria-label="Slide 4"></button>
+                            </div>
+                            <div class="col-auto">
+                                <div class="car-container">
+                                    <div id="car8" class="carousel slide">
+                                        <div class="carousel-indicators">
+                                            <button
+                                                type="button"
+                                                data-bs-target="#car8"
+                                                data-bs-slide-to="0"
+                                                class="active"
+                                                aria-current="true"
+                                                aria-label="Slide 1"></button>
+                                            <button
+                                                type="button"
+                                                data-bs-target="#car8"
+                                                data-bs-slide-to="1"
+                                                aria-label="Slide 2"></button>
+                                            <button
+                                                type="button"
+                                                data-bs-target="#car8"
+                                                data-bs-slide-to="2"
+                                                aria-label="Slide 3"></button>
+                                            <button
+                                                type="button"
+                                                data-bs-target="#car8"
+                                                data-bs-slide-to="3"
+                                                aria-label="Slide 4"></button>
+                                        </div>
+                                        <div class="carousel-inner">
+                                            <div class="carousel-item active">
+                                                <img
+                                                    src="Resources/Images/suvs/fordSuv1.png"
+                                                    class="d-block w-100"
+                                                    alt="" />
+                                            </div>
+                                            <div class="carousel-item">
+                                                <img
+                                                    src="Resources/Images/suvs/fordSuv2.png"
+                                                    class="d-block w-100"
+                                                    alt="" />
+                                            </div>
+                                            <div class="carousel-item">
+                                                <img
+                                                    src="Resources/Images/suvs/fordSuv3.png"
+                                                    class="d-block w-100"
+                                                    alt="" />
+                                            </div>
+                                            <div class="carousel-item">
+                                                <img
+                                                    src="Resources/Images/suvs/fordSuv4.png"
+                                                    class="d-block w-100"
+                                                    alt="" />
+                                            </div>
+                                        </div>
+                                        <button
+                                            class="carousel-control-prev"
+                                            type="button"
+                                            data-bs-target="#car8"
+                                            data-bs-slide="prev">
+                                            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                                            <span class="visually-hidden">Previous</span>
+                                        </button>
+                                        <button
+                                            class="carousel-control-next"
+                                            type="button"
+                                            data-bs-target="#car8"
+                                            data-bs-slide="next">
+                                            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                                            <span class="visually-hidden">Next</span>
+                                        </button>
                                     </div>
-                                    <div class="carousel-inner">
-                                      <div class="carousel-item active">
-                                        <img src="Resources/Images/suvs/fordSuv1.png" class="d-block w-100" alt="">
-                                      </div>
-                                      <div class="carousel-item">
-                                        <img src="Resources/Images/suvs/fordSuv2.png" class="d-block w-100" alt="">
-                                      </div>
-                                      <div class="carousel-item">
-                                        <img src="Resources/Images/suvs/fordSuv3.png" class="d-block w-100" alt="">
-                                      </div>
-                                      <div class="carousel-item">
-                                        <img src="Resources/Images/suvs/fordSuv4.png" class="d-block w-100" alt="">
-                                      </div>
-                                    </div>
-                                    <button class="carousel-control-prev" type="button" data-bs-target="#fordSuv" data-bs-slide="prev">
-                                      <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-                                      <span class="visually-hidden">Previous</span>
-                                    </button>
-                                    <button class="carousel-control-next" type="button" data-bs-target="#fordSuv" data-bs-slide="next">
-                                      <span class="carousel-control-next-icon" aria-hidden="true"></span>
-                                      <span class="visually-hidden">Next</span>
-                                    </button>
+                                    <p><strong>Car Model:</strong> Ford Edge</p>
+                                    <p><strong>Cost:</strong> $226</p>
+                                    <button class="btn btn-dark">Rent</button>
                                 </div>
-                                <p><strong>Car Model:</strong> Ford Edge</p>
-                                <p><strong>Cost:</strong> $226</p>
-                                <button class="btn btn-dark">Rent</button>
-                            </li>
-                            <li>
-                                <div id="toyotaSuv" class="carousel slide">
-                                    <div class="carousel-indicators">
-                                      <button type="button" data-bs-target="#toyotaSuv" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
-                                      <button type="button" data-bs-target="#toyotaSuv" data-bs-slide-to="1" aria-label="Slide 2"></button>
-                                      <button type="button" data-bs-target="#toyotaSuv" data-bs-slide-to="2" aria-label="Slide 3"></button>
-                                      <button type="button" data-bs-target="#toyotaSuv" data-bs-slide-to="3" aria-label="Slide 4"></button>
+                            </div>
+                            <div class="col-auto">
+                                <div class="car-container">
+                                    <div id="car9" class="carousel slide">
+                                        <div class="carousel-indicators">
+                                            <button
+                                                type="button"
+                                                data-bs-target="#car9"
+                                                data-bs-slide-to="0"
+                                                class="active"
+                                                aria-current="true"
+                                                aria-label="Slide 1"></button>
+                                            <button
+                                                type="button"
+                                                data-bs-target="#car9"
+                                                data-bs-slide-to="1"
+                                                aria-label="Slide 2"></button>
+                                            <button
+                                                type="button"
+                                                data-bs-target="#car9"
+                                                data-bs-slide-to="2"
+                                                aria-label="Slide 3"></button>
+                                            <button
+                                                type="button"
+                                                data-bs-target="#car9"
+                                                data-bs-slide-to="3"
+                                                aria-label="Slide 4"></button>
+                                        </div>
+                                        <div class="carousel-inner">
+                                            <div class="carousel-item active">
+                                                <img
+                                                    src="Resources/Images/suvs/toyotaSuv1.png"
+                                                    class="d-block w-100"
+                                                    alt="" />
+                                            </div>
+                                            <div class="carousel-item">
+                                                <img
+                                                    src="Resources/Images/suvs/toyotaSuv2.png"
+                                                    class="d-block w-100"
+                                                    alt="" />
+                                            </div>
+                                            <div class="carousel-item">
+                                                <img
+                                                    src="Resources/Images/suvs/toyotaSuv3.png"
+                                                    class="d-block w-100"
+                                                    alt="" />
+                                            </div>
+                                            <div class="carousel-item">
+                                                <img
+                                                    src="Resources/Images/suvs/toyotaSuv4.png"
+                                                    class="d-block w-100"
+                                                    alt="" />
+                                            </div>
+                                        </div>
+                                        <button
+                                            class="carousel-control-prev"
+                                            type="button"
+                                            data-bs-target="#car9"
+                                            data-bs-slide="prev">
+                                            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                                            <span class="visually-hidden">Previous</span>
+                                        </button>
+                                        <button
+                                            class="carousel-control-next"
+                                            type="button"
+                                            data-bs-target="#car9"
+                                            data-bs-slide="next">
+                                            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                                            <span class="visually-hidden">Next</span>
+                                        </button>
                                     </div>
-                                    <div class="carousel-inner">
-                                      <div class="carousel-item active">
-                                        <img src="Resources/Images/suvs/toyotaSuv1.png" class="d-block w-100" alt="">
-                                      </div>
-                                      <div class="carousel-item">
-                                        <img src="Resources/Images/suvs/toyotaSuv2.png" class="d-block w-100" alt="">
-                                      </div>
-                                      <div class="carousel-item">
-                                        <img src="Resources/Images/suvs/toyotaSuv3.png" class="d-block w-100" alt="">
-                                      </div>
-                                      <div class="carousel-item">
-                                        <img src="Resources/Images/suvs/toyotaSuv4.png" class="d-block w-100" alt="">
-                                      </div>
-                                    </div>
-                                    <button class="carousel-control-prev" type="button" data-bs-target="#toyotaSuv" data-bs-slide="prev">
-                                      <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-                                      <span class="visually-hidden">Previous</span>
-                                    </button>
-                                    <button class="carousel-control-next" type="button" data-bs-target="#toyotaSuv" data-bs-slide="next">
-                                      <span class="carousel-control-next-icon" aria-hidden="true"></span>
-                                      <span class="visually-hidden">Next</span>
-                                    </button>
+                                    <p><strong>Car Model:</strong> Toyota RAV4</p>
+                                    <p><strong>Cost:</strong> $217</p>
+                                    <button class="btn btn-dark">Rent</button>
                                 </div>
-                                <p><strong>Car Model:</strong> Toyota RAV4</p>
-                                <p><strong>Cost:</strong> $217</p>
-                                <button class="btn btn-dark">Rent</button>
-                            </li>
-                        </ul>
-                    </div>
+                            </div>
+                        </div>
+                    </section>
                 </section>
-            </div>
+            </section>
         </main>
         <footer class="p-3">
             <div class="row">
