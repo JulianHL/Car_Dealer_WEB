@@ -100,21 +100,27 @@
             </nav>
         </header>
         <main>
-            <section class="booking d-flex align-items-center justify-content-center">
+            <section id="booking_section" class="booking d-flex align-items-center justify-content-center">
                 <div class="booking-form d-flex align-items-center justify-content-center">
-                    <form class="row">
+                    <form class="row" action="#popular_models_section" method="get" onsubmit="SetCookiesBooking()">
                         <div class="col-auto d-flex align-items-end justify-content-center">
                             <div class="form-groupt">
                                 <select
                                     class="form-select mb-2"
                                     id="isTheSameDropOffLocation_input"
-                                    name="isTheSameDropOffLocation_input">
-                                    <option>Same Drop-Off location</option>
-                                    <option>Different Drop-Off location</option>
+                                    name="isTheSameDropOffLocation_input"
+                                    onchange="isTheSameDropOffLocation()"
+                                    required>
+                                    <option>Same Drop-Off Location</option>
+                                    <option>Different Drop-Off Location</option>
                                 </select>
                                 <label for="pickUpLocation_input">Pick-Up Location</label>
                                 <br />
-                                <select class="form-select" id="pickUpLocation_input" name="pickUpLocation_input">
+                                <select
+                                    class="form-select"
+                                    id="pickUpLocation_input"
+                                    name="pickUpLocation_input"
+                                    required>
                                     <option>Montreal</option>
                                     <option>Laval</option>
                                     <option>Quebec</option>
@@ -124,12 +130,17 @@
                                 </select>
                             </div>
                         </div>
-                        <div class="col-auto d-flex align-items-end justify-content-center">
-                            <div class="form-group">
+                        <div
+                            id="dropOffLocation_col"
+                            class="dropOffLocation-col col-auto d-flex align-items-end justify-content-center">
+                            <div id="dropOffLocation_form_group" class="dropOffLocation-form-group form-group">
                                 <label for="dropOffLocation_input">Drop-Off Location</label>
                                 <br />
-                                <select class="form-select" id="dropOffLocation_input" name="dropOffLocation_input">
-                                    <option>Montreal</option>
+                                <select
+                                    class="form-select"
+                                    id="dropOffLocation_input"
+                                    name="dropOffLocation_input"
+                                    required>
                                     <option>Laval</option>
                                     <option>Quebec</option>
                                     <option>Gaspe</option>
@@ -146,7 +157,8 @@
                                     class="form-control"
                                     type="datetime-local"
                                     id="pickUpDate_input"
-                                    name="pickUpDate_input" />
+                                    name="pickUpDate_input"
+                                    required />
                             </div>
                         </div>
                         <div class="col-auto d-flex align-items-end justify-content-center">
@@ -157,18 +169,19 @@
                                     class="form-control"
                                     type="datetime-local"
                                     id="dropOffDate_input"
-                                    name="dropOffDate_input" />
+                                    name="dropOffDate_input"
+                                    required />
                             </div>
                         </div>
 
                         <div class="col-auto d-flex align-items-end justify-content-center">
-                            <input class="btn btn-dark" type="button" value="Book" />
+                            <input type="submit" class="btn btn-dark" value="Book" />
                         </div>
                     </form>
                 </div>
             </section>
 
-            <section class="popular-models">
+            <section class="popular-models" id="popular_models_section">
                 <section class="title">
                     <h1>Our Popular Models</h1>
                 </section>
@@ -245,9 +258,26 @@
                                             <span class="visually-hidden">Next</span>
                                         </button>
                                     </div>
-                                    <p><strong>Car Model:</strong> Audi A5</p>
-                                    <p><strong>Cost:</strong> $199</p>
-                                    <button class="btn btn-dark">Rent</button>
+                                    <form
+                                        id="car1Form"
+                                        action="index.html#booking_section"
+                                        method="get"
+                                        onsubmit="ConcatenateCookies(1)">
+                                        <fieldset>
+                                            <label class="dark subtitle" for="car1Brand">Brand:</label>
+                                            <label class="dark subtitle" id="car1Brand">Audi</label>
+                                            <br />
+                                            <label class="dark subtitle" for="car1Model">Model:</label>
+                                            <label class="dark subtitle" id="car1Model">A5</label>
+                                            <br />
+                                            <label class="dark subtitle" for="car1Type">Type:</label>
+                                            <label class="dark subtitle" id="car1Type">Sedan</label>
+                                            <br />
+                                            <label class="dark subtitle" for="car1Cost">Cost: $</label>
+                                            <label class="dark subtitle" id="car1Cost">199</label>
+                                        </fieldset>
+                                        <button class="btn btn-dark">Rent</button>
+                                    </form>
                                 </div>
                             </div>
                             <div class="col-auto">
@@ -320,9 +350,26 @@
                                             <span class="visually-hidden">Next</span>
                                         </button>
                                     </div>
-                                    <p><strong>Car Model:</strong> KIA Rio</p>
-                                    <p><strong>Cost:</strong> $177</p>
-                                    <button class="btn btn-dark">Rent</button>
+                                    <form
+                                        id="car2Form"
+                                        action="index.html#booking_section"
+                                        method="get"
+                                        onsubmit="ConcatenateCookies(2)">
+                                        <fieldset>
+                                            <label class="dark subtitle" for="car2Brand">Brand:</label>
+                                            <label class="dark subtitle" id="car2Brand">Kia</label>
+                                            <br />
+                                            <label class="dark subtitle" for="car2Model">Model:</label>
+                                            <label class="dark subtitle" id="car2Model">Rio</label>
+                                            <br />
+                                            <label class="dark subtitle" for="car2Type">Type:</label>
+                                            <label class="dark subtitle" id="car2Type">Sedan</label>
+                                            <br />
+                                            <label class="dark subtitle" for="car2Cost">Cost: $</label>
+                                            <label class="dark subtitle" id="car2Cost">177</label>
+                                        </fieldset>
+                                        <button class="btn btn-dark">Rent</button>
+                                    </form>
                                 </div>
                             </div>
                             <div class="col-auto">
@@ -395,9 +442,26 @@
                                             <span class="visually-hidden">Next</span>
                                         </button>
                                     </div>
-                                    <p><strong>Car Model:</strong> Ford Mustang</p>
-                                    <p><strong>Cost:</strong> $250</p>
-                                    <button class="btn btn-dark">Rent</button>
+                                    <form
+                                        id="car3Form"
+                                        action="index.html#booking_section"
+                                        method="get"
+                                        onsubmit="ConcatenateCookies(3)">
+                                        <fieldset>
+                                            <label class="dark subtitle" for="car3Brand">Brand:</label>
+                                            <label class="dark subtitle" id="car3Brand">Ford</label>
+                                            <br />
+                                            <label class="dark subtitle" for="car3Model">Model:</label>
+                                            <label class="dark subtitle" id="car3Model">Mustang</label>
+                                            <br />
+                                            <label class="dark subtitle" for="car3Type">Type:</label>
+                                            <label class="dark subtitle" id="car3Type">Convertible</label>
+                                            <br />
+                                            <label class="dark subtitle" for="car3Cost">Cost: $</label>
+                                            <label class="dark subtitle" id="car3Cost">250</label>
+                                        </fieldset>
+                                        <button class="btn btn-dark">Rent</button>
+                                    </form>
                                 </div>
                             </div>
                         </div>
@@ -492,5 +556,7 @@
             src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
             integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
             crossorigin="anonymous"></script>
+        <!--js-->
+        <script src="JavaScript/index.js"></script>
     </body>
 </html>

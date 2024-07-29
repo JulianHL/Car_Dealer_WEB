@@ -15,7 +15,7 @@
         <!--Style CSS-->
         <link rel="stylesheet" type="text/css" media="screen" href="CSS/styles.css" />
     </head>
-    <body>
+    <body onload="GetCookies()">
         <header>
             <nav class="navbar navbar-dark navbar-expand-lg fixed-top">
                 <div class="container-fluid">
@@ -92,7 +92,43 @@
                 </div>
             </nav>
         </header>
-        <main></main>
+        <main>
+            <section class="main-section">
+                <section class="title">
+                    <h1>Your Booking</h1>
+                    <p>Thank you for booking whit us.</p>
+                </section>
+                <section class="confirmation-form">
+                    <form class="confirmation-form d-flex justify-content-center">
+                        <fieldset>
+                            <label for="pickUpLocation_output">Pick-Up Location:</label>
+                            <label id="pickUpLocation_output"></label>
+                            <br />
+                            <label for="pickOffLocation_output">Drop-Off Location:</label>
+                            <label id="dropOffLocation_output"></label>
+                            <br />
+                            <label for="pickUpDate_output">Pick-Up Date:</label>
+                            <label id="pickUpDate_output"></label>
+                            <br />
+                            <label for="dropOffDate_output">Drop-Off Date:</label>
+                            <label id="dropOffDate_output"></label>
+                            <br />
+                            <label for="carBrand_output">Car Brand:</label>
+                            <label id="carBrand_output"></label>
+                            <br />
+                            <label for="carModel_output">Car Model:</label>
+                            <label id="carModel_output"></label>
+                            <br />
+                            <label for="carType_output">Car Type:</label>
+                            <label id="carType_output"></label>
+                            <br />
+                            <label for="carCost_output">Car Cost: $</label>
+                            <label id="carCost_output"></label>
+                        </fieldset>
+                    </form>
+                </section>
+            </section>
+        </main>
 
         <footer class="p-3">
             <div class="row">
@@ -180,5 +216,7 @@
             src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
             integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
             crossorigin="anonymous"></script>
+        <!--Js-->
+        <script src="JavaScript/index.js"></script>
     </body>
 </html>
