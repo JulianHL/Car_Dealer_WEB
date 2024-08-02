@@ -1,52 +1,65 @@
 var carsInfo = [];
 
-function getAllCarsData(){
+function getAllCarsData() {
     var index = 1;
     var brand = document.getElementById("car" + index + "Brand").innerText.toLowerCase();
     var type = document.getElementById("car" + index + "Type").innerText.toLowerCase();
-    while(brand != null || type != null){
-        carsInfo.push({ "carBrand" : brand , "carType" : type});
+    var model = document.getElementById("car" + index + "Model").innerText.toLowerCase();
+    while (brand != null && brand != "" && type != null && type != "" && model != null && model != "") {
+        carsInfo.push({ carBrand: brand, carType: type, carModel: model });
         index++;
         brand = document.getElementById("car" + index + "Brand").innerText.toLowerCase();
         type = document.getElementById("car" + index + "Type").innerText.toLowerCase();
+        model = document.getElementById("car" + index + "Model").innerText.toLowerCase();
     }
 }
 
-function searchCar(){
+function navigateToSedan(event) {
+    event.preventDefault();
+    display = "sedan";
+    window.location.href = event.target.href;
+}
+
+function searchCar() {
     var input = document.getElementById("carSearch").value.toLowerCase();
-    for(var i = 0; i < carsInfo.length; i++){
-        if(carsInfo[i].carType == input || carsInfo[i].carBrand == input){
+
+    for (var i = 0; i < carsInfo.length; i++) {
+        if (
+            carsInfo[i].carType.includes(input) ||
+            carsInfo[i].carBrand.includes(input) ||
+            carsInfo[i].carModel.includes(input)
+        ) {
             document.getElementById("car" + (i + 1) + "Block").style.display = "inline-block";
-        }
-        else{
+        } else {
             document.getElementById("car" + (i + 1) + "Block").style.display = "none";
         }
     }
 }
 
-function showAllCars(){
-    for(var i = 0; i < carsInfo.length; i++){
+function showAllCars() {
+    for (var i = 0; i < carsInfo.length; i++) {
         document.getElementById("car" + (i + 1) + "Block").style.display = "inline-block";
     }
 }
 
-function showCarsByType(type){
-    for(var i = 0; i < carsInfo.length; i++){
-        if(carsInfo[i].carType == type.toLowerCase()){
-            document.getElementById("car" + (i + 1) + "Block").style.display = "inline-block";
-        }
-        else{
-            document.getElementById("car" + (i + 1) + "Block").style.display = "none";
+function showCarsByType(type) {
+    var typeArr = type.split("/");
+
+    for (var i = 0; i < carsInfo.length; i++) {
+        document.getElementById("car" + (i + 1) + "Block").style.display = "none";
+        for (var j = 0; j < typeArr.length; j++) {
+            if (carsInfo[i].carType == typeArr[j].toLowerCase()) {
+                document.getElementById("car" + (i + 1) + "Block").style.display = "inline-block";
+            }
         }
     }
 }
 
-function showCarsByBrand(brand){
-    for(var i = 0; i < carsInfo.length; i++){
-        if(carsInfo[i].carBrand == brand.toLowerCase()){
+function showCarsByBrand(brand) {
+    for (var i = 0; i < carsInfo.length; i++) {
+        if (carsInfo[i].carBrand == brand.toLowerCase()) {
             document.getElementById("car" + (i + 1) + "Block").style.display = "inline-block";
-        }
-        else{
+        } else {
             document.getElementById("car" + (i + 1) + "Block").style.display = "none";
         }
     }

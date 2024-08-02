@@ -19,7 +19,7 @@
         <header>
             <nav class="navbar navbar-dark navbar-expand-lg fixed-top">
                 <div class="container-fluid">
-                    <a class="navbar-brand" href="index.html">
+                    <a class="navbar-brand" href="#">
                         <img
                             src="Resources/Images/Prime%20Riders.png"
                             alt="Logo"
@@ -78,7 +78,7 @@
                                     </ul>
                                 </li>
                                 <li class="nav-item">
-                                    <a class="nav-link" href="financing.html">Financing</a>
+                                    <a class="nav-link" href="financing.html" target="_blank">Financing</a>
                                 </li>
                                 <li class="nav-item">
                                     <a class="nav-link" href="about.html">About us</a>
@@ -102,7 +102,12 @@
                     <section class="filters p-4">
                         <div class>
                             <p>Search</p>
-                            <input id="carSearch" class="form-control" type="text" placeholder="Search for a car" onchange="searchCar()"/>
+                            <input
+                                id="carSearch"
+                                class="form-control"
+                                type="text"
+                                placeholder="Search for a car"
+                                onchange="searchCar()" />
                         </div>
 
                         <div>
@@ -114,13 +119,17 @@
                                 <button class="btn btn-dark m-2" onclick="showCarsByType('Sedan')">Cars</button>
                             </div>
                             <div class="d-flex justify-content-center">
-                                <button class="btn btn-dark m-2" onclick="showCarsByType('SUV')">SUV</button>
+                                <button class="btn btn-dark m-2" onclick="showCarsByType('SUV/Minivan/4x4')">
+                                    SUV/Minivan/4x4
+                                </button>
                             </div>
                             <div class="d-flex justify-content-center">
                                 <button class="btn btn-dark m-2" onclick="showCarsByType('Electric')">Electric</button>
                             </div>
                             <div class="d-flex justify-content-center">
-                                <button class="btn btn-dark m-2" onclick="showCarsByType('Convertible')">Covertible</button>
+                                <button class="btn btn-dark m-2" onclick="showCarsByType('Convertible')">
+                                    Covertible
+                                </button>
                             </div>
                             <div class="d-flex justify-content-center">
                                 <button class="btn btn-dark m-2" onclick="showCarsByType('Luxury')">Luxury</button>
@@ -152,7 +161,7 @@
                         </div>
                     </section>
 
-                    <section class="cars">
+                    <section id="carsSection" class="cars">
                         <div class="row flex-row justify-content-center">
                             <div id="car1Block" class="col-auto">
                                 <div class="car-container">
@@ -608,7 +617,7 @@
                                             <label class="dark subtitle" id="car5Model">3 LR</label>
                                             <br />
                                             <label class="dark subtitle" for="car5Type">Type:</label>
-                                            <label class="dark subtitle" id="car5Type">Sedan</label>
+                                            <label class="dark subtitle" id="car5Type">Electric</label>
                                             <br />
                                             <label class="dark subtitle" for="car5Cost">Cost: $</label>
                                             <label class="dark subtitle" id="car5Cost">215</label>
