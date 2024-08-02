@@ -1,3 +1,57 @@
+var carsInfo = [];
+
+function getAllCarsData(){
+    var index = 1;
+    var brand = document.getElementById("car" + index + "Brand").innerText.toLowerCase();
+    var type = document.getElementById("car" + index + "Type").innerText.toLowerCase();
+    while(brand != null || type != null){
+        carsInfo.push({ "carBrand" : brand , "carType" : type});
+        index++;
+        brand = document.getElementById("car" + index + "Brand").innerText.toLowerCase();
+        type = document.getElementById("car" + index + "Type").innerText.toLowerCase();
+    }
+}
+
+function searchCar(){
+    var input = document.getElementById("carSearch").value.toLowerCase();
+    for(var i = 0; i < carsInfo.length; i++){
+        if(carsInfo[i].carType == input || carsInfo[i].carBrand == input){
+            document.getElementById("car" + (i + 1) + "Block").style.display = "inline-block";
+        }
+        else{
+            document.getElementById("car" + (i + 1) + "Block").style.display = "none";
+        }
+    }
+}
+
+function showAllCars(){
+    for(var i = 0; i < carsInfo.length; i++){
+        document.getElementById("car" + (i + 1) + "Block").style.display = "inline-block";
+    }
+}
+
+function showCarsByType(type){
+    for(var i = 0; i < carsInfo.length; i++){
+        if(carsInfo[i].carType == type.toLowerCase()){
+            document.getElementById("car" + (i + 1) + "Block").style.display = "inline-block";
+        }
+        else{
+            document.getElementById("car" + (i + 1) + "Block").style.display = "none";
+        }
+    }
+}
+
+function showCarsByBrand(brand){
+    for(var i = 0; i < carsInfo.length; i++){
+        if(carsInfo[i].carBrand == brand.toLowerCase()){
+            document.getElementById("car" + (i + 1) + "Block").style.display = "inline-block";
+        }
+        else{
+            document.getElementById("car" + (i + 1) + "Block").style.display = "none";
+        }
+    }
+}
+
 function isTheSameDropOffLocation() {
     var isTheSameDropOffLocation_input = document.getElementById("isTheSameDropOffLocation_input");
     var selectedValue = isTheSameDropOffLocation_input.value;
