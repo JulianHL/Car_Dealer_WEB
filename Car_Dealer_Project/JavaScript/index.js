@@ -82,25 +82,33 @@ function SetCookiesBooking() {
     var dropOffLocation = document.getElementById("pickUpLocation_input").value;
     var pickUpDate = document.getElementById("pickUpDate_input").value;
     var dropOffDate = document.getElementById("dropOffDate_input").value;
+    var pickUpDateObj = new Date(pickUpDate);
+    var dropOffDateObj = new Date(dropOffDate);
 
     if (selectedValue != "Same Drop-Off Location") {
         dropOffLocation = document.getElementById("dropOffLocation_input").value;
     }
 
-    document.cookie =
-        "BookingInformation=" +
-        "pickUpLocation_output=" +
-        pickUpLocation +
-        "|dropOffLocation_output=" +
-        dropOffLocation +
-        "|pickUpDate_output=" +
-        pickUpDate +
-        "|dropOffDate_output=" +
-        dropOffDate;
+    if (pickUpDateObj >= new Date() && dropOffDateObj >= new Date()) {
+        if (pickUpDateObj < dropOffDateObj) {
+            document.cookie =
+                "BookingInformation=" +
+                "pickUpLocation_output=" +
+                pickUpLocation +
+                "|dropOffLocation_output=" +
+                dropOffLocation +
+                "|pickUpDate_output=" +
+                pickUpDate +
+                "|dropOffDate_output=" +
+                dropOffDate;
 
-    alert(document.cookie);
-
-    document.getElementById("popular_models_section").scrollIntoView({ behavior: "smooth" });
+            document.getElementById("popular_models_section").scrollIntoView({ behavior: "smooth" });
+        } else {
+            alert("The pick up date cannot be after the drop off date");
+        }
+    } else {
+        alert("Pick up or drop off date cannot be in the past");
+    }
 }
 
 function ConcatenateCookies(id) {
@@ -118,7 +126,6 @@ function ConcatenateCookies(id) {
     var carType = document.getElementById("car" + id + "Type").innerText;
     var carCost = document.getElementById("car" + id + "Cost").innerText;
 
-    alert(document.cookie);
     document.cookie +=
         "BookingInformation=" +
         "|carBrand_output=" +
@@ -135,7 +142,6 @@ function ConcatenateCookies(id) {
 function GetCookies() {
     var arrCookies = document.cookie.split("BookingInformation=");
     var strCookies = arrCookies.join("");
-    alert(strCookies);
     arrCookies = strCookies.split("|");
 
     for (var i = 0; i < arrCookies.length; i++) {
