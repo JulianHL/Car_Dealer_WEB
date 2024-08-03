@@ -14,12 +14,6 @@ function getAllCarsData() {
     }
 }
 
-function navigateToSedan(event) {
-    event.preventDefault();
-    display = "sedan";
-    window.location.href = event.target.href;
-}
-
 function searchCar() {
     var input = document.getElementById("carSearch").value.toLowerCase();
 
@@ -112,7 +106,6 @@ function SetCookiesBooking() {
 function ConcatenateCookies(id) {
     var arrCookies = document.cookie.split("BookingInformation=");
 
-    alert(arrCookies.length);
     if (arrCookies.length != 2) {
         alert("Set up a booking first");
         document.getElementById("booking_section").scrollIntoView({ behavior: "smooth" });
@@ -136,8 +129,6 @@ function ConcatenateCookies(id) {
         carType +
         "|carCost_output=" +
         carCost;
-
-    alert(document.cookie);
     document.getElementById("car" + id + "Form").action = "confirmation.html";
 }
 
@@ -146,8 +137,6 @@ function GetCookies() {
     var strCookies = arrCookies.join("");
     alert(strCookies);
     arrCookies = strCookies.split("|");
-
-    alert(arrCookies.length);
 
     for (var i = 0; i < arrCookies.length; i++) {
         var column = arrCookies[i].split("=");
